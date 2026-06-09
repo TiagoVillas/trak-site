@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" role="img" aria-label="Baixar na App Store">
+  <rect x="0.5" y="0.5" width="119" height="39" rx="8.5" fill="#000" stroke="#A6A6A6" stroke-width="1"/>
+  <g fill="#fff">
+    <!-- Apple logo -->
+    <path transform="translate(12,9.2) scale(0.78)" d="M17.05 12.536c-.03-2.69 2.2-3.98 2.3-4.05-1.25-1.83-3.2-2.08-3.89-2.11-1.66-.17-3.23.97-4.07.97-.84 0-2.13-.95-3.5-.92-1.8.03-3.46 1.04-4.39 2.65-1.87 3.25-.48 8.06 1.34 10.7.89 1.29 1.95 2.74 3.34 2.69 1.34-.05 1.85-.86 3.47-.86 1.62 0 2.08.86 3.5.84 1.44-.03 2.36-1.32 3.24-2.61 1.02-1.5 1.44-2.95 1.46-3.03-.03-.01-2.8-1.08-2.83-4.27z M14.69 4.7c.74-.9 1.24-2.15 1.1-3.4-1.07.04-2.36.71-3.12 1.61-.68.79-1.28 2.06-1.12 3.28 1.19.09 2.41-.6 3.14-1.49"/>
+    <!-- Text -->
+    <text x="36" y="16" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="7" letter-spacing="0.2">Baixar na</text>
+    <text x="35.5" y="31" font-family="-apple-system,'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16.5" font-weight="500" letter-spacing="-0.3">App Store</text>
+  </g>
+</svg>
