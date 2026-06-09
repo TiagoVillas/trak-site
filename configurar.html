@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Como pôr seus hábitos no lock screen do iPhone — trak</title>
+  <meta name="description" content="Passo a passo para deixar o calendário de hábitos do trak no wallpaper do lock screen do iPhone: instale o atalho, crie a automação diária no app Atalhos e teste.">
+  <link rel="canonical" href="https://trakapp.com.br/configurar">
+  <meta name="theme-color" content="#f6f4ef">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="trak">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://trakapp.com.br/configurar">
+  <meta property="og:title" content="Como pôr seus hábitos no lock screen do iPhone">
+  <meta property="og:description" content="Passo a passo para deixar o calendário do trak atualizando seu lock screen automaticamente.">
+  <meta property="og:image" content="https://trakapp.com.br/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://trakapp.com.br/img/og.png">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/newsreader-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Como pôr seus hábitos no lock screen do iPhone com o trak",
+    "description": "Configure o atalho e a automação para o calendário de hábitos do trak atualizar o wallpaper do seu lock screen automaticamente toda noite.",
+    "inLanguage": "pt-BR",
+    "totalTime": "PT5M",
+    "tool": [
+      { "@type": "HowToTool", "name": "iPhone com iOS 26 ou mais recente" },
+      { "@type": "HowToTool", "name": "App trak" },
+      { "@type": "HowToTool", "name": "App Atalhos (Apple Shortcuts)" }
+    ],
+    "step": [
+      { "@type": "HowToStep", "name": "Crie hábitos e gere o wallpaper",
+        "text": "No trak, crie seus hábitos e gere o wallpaper escolhendo um modo e uma paleta. O app salva a imagem que o atalho vai usar." },
+      { "@type": "HowToStep", "name": "Adicione o atalho",
+        "text": "Abra o link do atalho 'Atualizar Wallpaper trak' e toque em Adicionar Atalho. Não renomeie o atalho.",
+        "url": "https://www.icloud.com/shortcuts/7956060ebcc44ce2a4ac5a19052c76bf" },
+      { "@type": "HowToStep", "name": "Crie a automação diária",
+        "text": "No app Atalhos, vá na aba Automação, toque em +, escolha Hora do Dia às 00:05 diariamente, ação Executar Atalho e selecione 'Atualizar Wallpaper trak'. Marque para executar imediatamente, sem perguntar." },
+      { "@type": "HowToStep", "name": "Teste",
+        "text": "Rode o atalho uma vez, vá para a tela de bloqueio e confira. A partir daí o wallpaper se atualiza sozinho toda noite." }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="nav"><div class="container">
+    <a href="/" class="brand">trak</a>
+    <nav class="nav-links">
+      <a href="/#como">Como funciona</a>
+      <a href="/configurar">Configurar</a>
+      <a href="/#baixar" class="nav-cta">Baixar</a>
+    </nav>
+  </div></header>
+
+  <main class="prose">
+    <p class="breadcrumb"><a href="/">Início</a> › Configurar</p>
+    <h1>Como pôr seus hábitos no lock screen</h1>
+    <p class="lead-p">O trak desenha seu progresso num calendário e um atalho do iPhone coloca essa imagem no seu lock screen — atualizando sozinho toda noite. Leva cerca de 5 minutos para configurar.</p>
+
+    <h2>Antes de começar</h2>
+    <ul class="prereq">
+      <li>iPhone com <strong>iOS 26</strong> ou mais recente</li>
+      <li>O app <strong>trak</strong> instalado, com pelo menos um hábito criado</li>
+      <li>O app <strong>Atalhos</strong> (vem com o iPhone — se você apagou, baixe de novo na App Store)</li>
+    </ul>
+
+    <hr>
+
+    <!-- PASSO 1 -->
+    <div class="tut-step">
+      <div class="num">1</div>
+      <div class="body">
+        <h3>Crie hábitos e gere o wallpaper</h3>
+        <p>No trak, adicione os hábitos que você quer acompanhar e gere o wallpaper escolhendo um <strong>modo</strong> (ex.: calendário do ano, grade mensal, espiral) e uma <strong>paleta</strong>. O app salva essa imagem — é ela que o atalho vai usar.</p>
+      </div>
+    </div>
+
+    <!-- PASSO 2 -->
+    <div class="tut-step">
+      <div class="num">2</div>
+      <div class="body">
+        <h3>Adicione o atalho</h3>
+        <p>Abra o atalho oficial do trak no seu iPhone e toque em <span class="kbd">Adicionar Atalho</span>.</p>
+        <a class="btn-inline" href="https://www.icloud.com/shortcuts/7956060ebcc44ce2a4ac5a19052c76bf" target="_blank" rel="noopener">Abrir o atalho “Atualizar Wallpaper trak” ↗</a>
+        <div class="callout"><strong>Importante:</strong> não renomeie o atalho. A automação do próximo passo procura por ele pelo nome exato “Atualizar Wallpaper trak”.</div>
+      </div>
+    </div>
+
+    <!-- PASSO 3 -->
+    <div class="tut-step">
+      <div class="num">3</div>
+      <div class="body">
+        <h3>Crie a automação diária</h3>
+        <p>É isso que faz o lock screen se atualizar sozinho. No app <strong>Atalhos</strong>:</p>
+        <ol>
+          <li>Abra a aba <span class="kbd">Automação</span> (no rodapé).</li>
+          <li>Toque em <span class="kbd">+</span> (canto superior direito) e em <span class="kbd">Criar Automação Pessoal</span>.</li>
+          <li>Escolha <span class="kbd">Hora do Dia</span>, defina <span class="kbd">00:05</span> e <span class="kbd">Diariamente</span>. Avance.</li>
+          <li>Adicione a ação <span class="kbd">Executar Atalho</span> e selecione <span class="kbd">Atualizar Wallpaper trak</span>.</li>
+          <li>Deixe ligado <span class="kbd">Executar Imediatamente</span> (sem perguntar antes) e conclua.</li>
+        </ol>
+        <p class="muted">Por que 00:05? Assim, logo depois da meia-noite, seu lock screen já reflete o novo dia.</p>
+      </div>
+    </div>
+
+    <!-- PASSO 4 -->
+    <div class="tut-step">
+      <div class="num">4</div>
+      <div class="body">
+        <h3>Teste agora</h3>
+        <p>Não espere até a meia-noite para saber se deu certo. Abra o atalho <strong>Atualizar Wallpaper trak</strong> e toque para rodá-lo uma vez. Na primeira execução, o iPhone pode pedir permissão para alterar o papel de parede — autorize.</p>
+        <p>Depois, vá para a <strong>tela de bloqueio</strong> e confira: seu calendário de hábitos deve estar lá. A partir daqui, ele se atualiza sozinho toda noite enquanto você dorme.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Deu algo errado?</h2>
+    <div class="note">
+      <p><strong>O wallpaper não mudou.</strong> Rode o atalho manualmente uma vez (Passo 4). Se o iPhone pediu permissão e você negou, vá em Ajustes › trak / Atalhos e libere o acesso.</p>
+      <p><strong>A automação não dispara.</strong> Confira na aba Automação se ela está ativada e com “Executar Imediatamente” ligado — senão o iPhone só manda uma notificação em vez de trocar o papel de parede.</p>
+      <p style="margin-bottom:0;"><strong>Renomeei o atalho sem querer.</strong> Renomeie de volta para <em>Atualizar Wallpaper trak</em> ou reinstale pelo link do Passo 2 e refaça a automação.</p>
+    </div>
+
+    <p style="margin-top:32px;">Ainda travado? Escreve pra <a href="mailto:villasboas.tiago@gmail.com">villasboas.tiago@gmail.com</a> que eu te ajudo.</p>
+  </main>
+
+  <footer class="site"><div class="container inner">
+    <div>
+      <div class="links"><a href="/#como">Como funciona</a><a href="/configurar">Configurar</a><a href="/privacidade">Privacidade</a><a href="/termos">Termos</a></div>
+      <div style="margin-top:14px;">Contato: <a href="mailto:villasboas.tiago@gmail.com">villasboas.tiago@gmail.com</a></div>
+    </div>
+    <div class="copy">© 2026 trak · feito por Tiago Villas</div>
+  </div></footer>
+
+</body>
+</html>

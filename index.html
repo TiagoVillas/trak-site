@@ -3,23 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>trak — calendário de hábitos no seu lock screen</title>
-  <meta name="description" content="trak transforma seus hábitos em um wallpaper que evolui com você, dia após dia.">
+
+  <title>trak — calendário de hábitos no lock screen do iPhone</title>
+  <meta name="description" content="O trak transforma seus hábitos em um calendário que evolui no wallpaper do seu lock screen, célula por célula. App de hábitos para iPhone, em português.">
+  <link rel="canonical" href="https://trakapp.com.br/">
+  <meta name="theme-color" content="#f6f4ef">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="trak">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://trakapp.com.br/">
+  <meta property="og:title" content="trak — calendário de hábitos no lock screen do iPhone">
+  <meta property="og:description" content="Seus hábitos viram um calendário que evolui no wallpaper do seu lock screen, célula por célula.">
+  <meta property="og:image" content="https://trakapp.com.br/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="trak — calendário de hábitos no lock screen">
+  <meta name="twitter:description" content="Seus hábitos viram um calendário que evolui no wallpaper do seu lock screen.">
+  <meta name="twitter:image" content="https://trakapp.com.br/img/og.png">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/newsreader-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "trak",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "iOS 26+",
+    "url": "https://trakapp.com.br/",
+    "description": "App de acompanhamento de hábitos que transforma seu progresso em um calendário no wallpaper do lock screen do iPhone.",
+    "inLanguage": "pt-BR",
+    "image": "https://trakapp.com.br/img/og.png",
+    "author": { "@type": "Person", "name": "Tiago Villas" },
+    "offers": { "@type": "Offer", "category": "subscription", "name": "trak Plus" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Preciso pagar para usar o trak?",
+        "acceptedAnswer": { "@type": "Answer", "text": "O trak oferece recursos premium pela assinatura trak Plus, com planos mensal, anual e vitalícia. As compras são processadas pela App Store." } },
+      { "@type": "Question", "name": "O trak funciona em Android?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Por enquanto o trak é só para iPhone, com iOS 26 ou mais recente." } },
+      { "@type": "Question", "name": "Como o calendário aparece no lock screen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Um atalho do app Atalhos (Apple Shortcuts) atualiza seu wallpaper automaticamente toda noite. Há um passo a passo completo na página Configurar." } },
+      { "@type": "Question", "name": "Onde meus dados ficam guardados?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Seus hábitos e preferências são sincronizados de forma privada na sua conta, na infraestrutura do Supabase, por conexões criptografadas. O trak não vende dados nem usa para publicidade." } }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <main class="wrap">
-    <section class="hero">
-      <p class="overline">trak</p>
-      <h1>Cada dia deixa uma <span class="serif-em">marca</span>.</h1>
-      <p>Acompanhe seus hábitos e veja seu ano ganhar forma — direto no wallpaper do seu lock screen, célula por célula.</p>
-    </section>
 
-    <footer>
-      <a href="/privacidade">Política de Privacidade</a>
-      <a href="/termos">Termos de Uso</a>
-      <div style="margin-top:12px;">Contato: <a href="mailto:villasboas.tiago@gmail.com">villasboas.tiago@gmail.com</a></div>
-    </footer>
+  <!-- NAV -->
+  <header class="nav"><div class="container">
+    <a href="/" class="brand">trak</a>
+    <nav class="nav-links">
+      <a href="#como">Como funciona</a>
+      <a href="/configurar">Configurar</a>
+      <a href="#baixar" class="nav-cta">Baixar</a>
+    </nav>
+  </div></header>
+
+  <main>
+  <!-- HERO -->
+  <section class="hero"><div class="container hero-inner">
+    <div>
+      <p class="overline">trak</p>
+      <h1>Cada dia deixa<br>uma <span class="serif-em">marca</span>.</h1>
+      <p class="sub">Acompanhe seus hábitos e veja seu ano ganhar forma — direto no wallpaper do seu lock screen, célula por célula.</p>
+      <div class="cta-row" id="baixar">
+        <!-- TODO(lançamento): trocar href "#" pela URL da App Store (ou do TestFlight). Único ponto de swap. -->
+        <a class="btn-store" href="#"><span><small>Baixar na</small><b>App Store</b></span></a>
+        <span class="cta-note">iPhone · iOS 26+</span>
+      </div>
+    </div>
+    <div class="phone">
+      <picture>
+        <source srcset="/img/lockscreen.webp" type="image/webp">
+        <img src="/img/lockscreen.png" width="552" height="1200" alt="Calendário de hábitos do trak no lock screen do iPhone, com células laranja marcando os dias concluídos">
+      </picture>
+    </div>
+  </div></section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section" id="como"><div class="container idea">
+    <div class="phone">
+      <picture>
+        <source srcset="/img/home.webp" type="image/webp">
+        <img src="/img/home.png" width="552" height="1200" alt="Tela inicial do trak mostrando a lista de hábitos do dia com sequências (streaks) e marcações concluídas">
+      </picture>
+    </div>
+    <div class="order-text">
+      <p class="overline">como funciona</p>
+      <h2>Seu progresso, onde você não consegue ignorar.</h2>
+      <ul class="steps">
+        <li><span class="n">1</span><span class="t"><b>Marque o hábito como feito.</b> <span>Uma célula acende no calendário do ano.</span></span></li>
+        <li><span class="n">2</span><span class="t"><b>O calendário vira seu wallpaper.</b> <span>Um atalho atualiza o lock screen toda noite.</span></span></li>
+        <li><span class="n">3</span><span class="t"><b>Você vê o ano ganhar forma.</b> <span>Toda vez que levanta o telefone.</span></span></li>
+      </ul>
+    </div>
+  </div></section>
+
+  <!-- TRIO -->
+  <div class="trio-wrap"><div class="container trio">
+    <div class="feat">
+      <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/><rect x="6.5" y="12" width="3" height="3" rx=".6" fill="currentColor" stroke="none"/><rect x="11" y="12" width="3" height="3" rx=".6" fill="currentColor" stroke="none"/></svg></div>
+      <h3>Hábitos viram wallpaper</h3>
+      <p>O calendário do ano inteiro mora no seu lock screen e se atualiza sozinho.</p>
+    </div>
+    <div class="feat">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c1.5 3 4.5 4.2 4.5 8a4.5 4.5 0 1 1-9 0c0-1.6.8-2.8 1.6-3.6.2 1 .9 1.7 1.7 1.7C12 9 11 6 12 3z"/></svg></div>
+      <h3>Streaks que você vê</h3>
+      <p>Sequências em dias, sempre à vista. A motivação de não quebrar a corrente.</p>
+    </div>
+    <div class="feat">
+      <div class="ico"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.4"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.4"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.4"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.4" fill="currentColor" stroke="none"/></svg></div>
+      <h3>O ano ganhando forma</h3>
+      <p>Doze meses, célula por célula. Um retrato honesto da sua consistência.</p>
+    </div>
+  </div></div>
+
+  <!-- FAQ -->
+  <section class="section"><div class="container faq">
+    <p class="overline">perguntas</p>
+    <h2>Antes de começar</h2>
+    <p class="lead">As dúvidas mais comuns sobre o trak.</p>
+
+    <details class="qa"><summary>Preciso pagar para usar o trak?</summary>
+      <p>O trak oferece recursos premium pela assinatura <strong>trak Plus</strong>, com planos mensal, anual e vitalícia. As compras são processadas pela App Store da Apple.</p></details>
+    <details class="qa"><summary>O trak funciona em Android?</summary>
+      <p>Por enquanto o trak é só para iPhone, com iOS 26 ou mais recente.</p></details>
+    <details class="qa"><summary>Como o calendário aparece no lock screen?</summary>
+      <p>Um atalho do app Atalhos (Apple Shortcuts) atualiza seu wallpaper automaticamente toda noite. Tem um <a href="/configurar">passo a passo completo aqui</a>.</p></details>
+    <details class="qa"><summary>Onde meus dados ficam guardados?</summary>
+      <p>Seus hábitos e preferências são sincronizados de forma privada na sua conta. O trak não vende dados nem usa para publicidade — veja a <a href="/privacidade">política de privacidade</a>.</p></details>
+  </div></section>
+
+  <!-- FINAL CTA -->
+  <section class="final" id="comecar"><div class="inner">
+    <h2>Comece o seu ano hoje.</h2>
+    <p>Baixe o trak e deixe cada dia marcar o seu calendário.</p>
+    <!-- TODO(lançamento): trocar href "#" pela URL da App Store (ou do TestFlight). -->
+    <a class="btn-store" href="#"><span><small>Baixar na</small><b>App Store</b></span></a>
+  </div></section>
   </main>
+
+  <!-- FOOTER -->
+  <footer class="site"><div class="container inner">
+    <div>
+      <div class="links"><a href="#como">Como funciona</a><a href="/configurar">Configurar</a><a href="/privacidade">Privacidade</a><a href="/termos">Termos</a></div>
+      <div style="margin-top:14px;">Contato: <a href="mailto:villasboas.tiago@gmail.com">villasboas.tiago@gmail.com</a></div>
+    </div>
+    <div class="copy">© 2026 trak · feito por Tiago Villas</div>
+  </div></footer>
+
 </body>
 </html>

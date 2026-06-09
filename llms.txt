@@ -1,0 +1,31 @@
+# trak
+
+> trak é um app de acompanhamento de hábitos para iPhone (iOS 26+) que transforma
+> seu progresso em um calendário visual exibido no wallpaper do lock screen. Cada
+> hábito concluído acende uma célula; ao longo do ano, o calendário ganha forma.
+> Interface em português (pt-BR). Desenvolvido por Tiago Villas.
+
+## Como funciona
+
+- Você marca um hábito como feito no app e isso acende uma célula no calendário do ano.
+- O trak gera uma imagem (wallpaper) desse calendário, com modos e paletas diferentes.
+- Um atalho do app Atalhos (Apple Shortcuts) coloca essa imagem no lock screen e a
+  atualiza automaticamente toda noite, via uma automação diária (Hora do Dia, 00:05).
+- Recursos como sequências (streaks) ficam sempre à vista na tela de bloqueio.
+
+## Páginas
+
+- [Início](https://trakapp.com.br/): visão geral do app, download e perguntas frequentes.
+- [Configurar](https://trakapp.com.br/configurar): tutorial passo a passo para pôr o
+  calendário de hábitos no lock screen (instalar o atalho, criar a automação e testar).
+- [Privacidade](https://trakapp.com.br/privacidade): política de privacidade (LGPD).
+- [Termos](https://trakapp.com.br/termos): termos de uso e detalhes da assinatura trak Plus.
+
+## Fatos
+
+- Plataforma: iPhone, iOS 26 ou mais recente. Não há versão Android no momento.
+- Modelo de negócio: assinatura "trak Plus" (mensal, anual e vitalícia), via App Store.
+- Privacidade: dados sincronizados de forma privada (infraestrutura Supabase); não há
+  venda de dados nem publicidade de terceiros.
+- Atalho oficial: "Atualizar Wallpaper trak" (não deve ser renomeado).
+- Contato: villasboas.tiago@gmail.com
