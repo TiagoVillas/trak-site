@@ -35,4 +35,4 @@
 - Privacidade: dados sincronizados de forma privada (infraestrutura Supabase); não há
   venda de dados nem publicidade de terceiros.
 - Atalho oficial: "Atualizar Wallpaper trak" (não deve ser renomeado).
-- Contato: villasboas.tiago@gmail.com
+- Contato: contato@trakapp.com.br
