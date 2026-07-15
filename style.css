@@ -122,7 +122,8 @@ a:hover{text-decoration:underline;}
 /* ---------- Footer ---------- */
 footer.site{font-size:.9rem; color:var(--muted); border-top:1px solid var(--line);}
 footer.site .inner{padding:48px 24px 64px; display:flex; flex-wrap:wrap; gap:18px; justify-content:space-between;}
-footer.site .links a{margin-right:18px; color:var(--ink);}
+footer.site .links{display:flex; flex-wrap:wrap; gap:8px 18px;}
+footer.site .links a{color:var(--ink);}
 footer.site .copy{opacity:.7; align-self:flex-end;}
 
 /* ---------- Prose (tutorial + legal) ---------- */
