@@ -9,7 +9,8 @@ Store↔TestFlight).
 
 ## Stack
 
-- HTML + CSS **estáticos**, sem build, sem framework, sem JS (a FAQ usa `<details>`).
+- HTML + CSS **estáticos**, sem build, sem framework, sem JS próprio (a FAQ usa
+  `<details>`; única exceção: o script do Vercel Web Analytics, sem cookies).
 - Serif dos títulos: **Newsreader** self-hosted (`fonts/*.woff2`, `font-display:swap`).
 - Hospedagem: **Vercel via integração GitHub** — push em `main` dispara deploy de
   produção automaticamente (não há Vercel CLI/`.vercel` no repo).
