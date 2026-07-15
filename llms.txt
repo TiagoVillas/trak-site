@@ -18,13 +18,20 @@
 - [Início](https://trakapp.com.br/): visão geral do app, download e perguntas frequentes.
 - [Configurar](https://trakapp.com.br/configurar): tutorial passo a passo para pôr o
   calendário de hábitos no lock screen (instalar o atalho, criar a automação e testar).
+- [Hábitos na tela de bloqueio](https://trakapp.com.br/habitos-na-tela-de-bloqueio):
+  por que ver o progresso na tela de bloqueio funciona (gatilhos visuais, fricção).
+- [Rastreador de hábitos para iPhone](https://trakapp.com.br/rastreador-de-habitos-iphone):
+  guia de critérios para escolher um app de hábitos e onde o trak se encaixa.
 - [Privacidade](https://trakapp.com.br/privacidade): política de privacidade (LGPD).
-- [Termos](https://trakapp.com.br/termos): termos de uso e detalhes da assinatura trak Plus.
+- [Termos](https://trakapp.com.br/termos): termos de uso e detalhes da assinatura trak Pro.
 
 ## Fatos
 
 - Plataforma: iPhone, iOS 26 ou mais recente. Não há versão Android no momento.
-- Modelo de negócio: assinatura "trak Plus" (mensal, anual e vitalícia), via App Store.
+- Modelo de negócio: assinatura "trak Pro" (mensal e anual, com 7 dias de teste grátis
+  no plano anual), via App Store. Plano grátis: até 3 hábitos e 2 estilos de wallpaper.
+- Estilos de wallpaper: Calendário do ano, Mês a mês, Calendário de vida, Consistência,
+  Semestre, Pulso, Espiral e Número da sequência. Paletas: Brasa, Maré, Musgo e personalizada.
 - Privacidade: dados sincronizados de forma privada (infraestrutura Supabase); não há
   venda de dados nem publicidade de terceiros.
 - Atalho oficial: "Atualizar Wallpaper trak" (não deve ser renomeado).

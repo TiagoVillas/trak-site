@@ -159,6 +159,81 @@ footer.site .copy{opacity:.7; align-self:flex-end;}
 .prereq li{display:flex; gap:10px; align-items:flex-start; margin:8px 0;}
 .prereq li::before{content:"✓"; color:var(--accent); font-weight:700;}
 
+/* ---------- Lock screen mockup (hero) ----------
+   Grade gerada por scripts/gen_lockscreen.py (12 meses, Monday-first).
+   .a = célula clara, .b = célula queimada, .t = hoje, <i> vazio = futuro, <u> = gap. */
+.ls{position:relative; aspect-ratio:1206/2622; border-radius:34px; overflow:hidden;
+  display:flex; flex-direction:column; padding:34px 15px 30px;
+  background:
+    radial-gradient(90% 50% at 85% -8%, rgba(217,106,51,.32) 0%, rgba(217,106,51,0) 60%),
+    radial-gradient(70% 40% at 10% 108%, rgba(217,106,51,.14) 0%, rgba(217,106,51,0) 60%),
+    #17110c;}
+.ls-top{text-align:center; color:#f3ede4; margin-bottom:12px;}
+.ls-date{display:block; font-size:.68rem; font-weight:600; letter-spacing:.01em; color:#e9e2d6;}
+.ls-clock{display:block; font-size:52px; font-weight:200; line-height:1.05; letter-spacing:-.01em;}
+.ls-cal{flex:1; display:grid; grid-template-columns:repeat(3,1fr); gap:10px 9px;
+  align-content:center; padding:6px 2px;}
+.mo b{display:block; text-align:center; font-weight:600; text-transform:uppercase;
+  letter-spacing:.22em; font-size:6.5px; color:#8d8175; margin-bottom:4px;}
+.mg{display:grid; grid-template-columns:repeat(7,1fr); gap:2.5px;}
+.mg i,.mg u{display:block; aspect-ratio:1; border-radius:2.5px; background:#262019;}
+.mg u{background:transparent;}
+.mg i.a{--c:#e8703f;}
+.mg i.b{--c:#a8542e;}
+.mg i.a,.mg i.b{animation:cell-in .5s cubic-bezier(.2,.7,.3,1.25) var(--d) both;}
+.mg i.t{--c:#dcb591; border-radius:50%;
+  animation:cell-in .5s cubic-bezier(.2,.7,.3,1.25) var(--d) both,
+            today-pulse 2.6s ease-in-out calc(var(--d) + .7s) infinite;}
+@keyframes cell-in{
+  from{background:#262019; transform:scale(.55);}
+  to{background:var(--c); transform:scale(1);}
+}
+@keyframes today-pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(220,181,145,.45);}
+  50%{box-shadow:0 0 0 3px rgba(220,181,145,0);}
+}
+.ls-foot{text-align:center; font-size:7px; letter-spacing:.3em; text-transform:uppercase;
+  color:#7d7368; margin-top:10px;}
+@media (prefers-reduced-motion: reduce){
+  .mg i.a,.mg i.b,.mg i.t{animation:none; background:var(--c);}
+}
+
+/* ---------- Demo (vídeo) ---------- */
+.demo{border-top:1px solid var(--line);}
+.demo-inner{text-align:center;}
+.demo-inner h2{font-size:2.2rem; margin:12px 0 14px;}
+.demo-inner .lead{color:var(--muted); max-width:520px; margin:0 auto 36px;}
+.demo-phone{margin:0 auto;}
+.demo-phone video{display:block; width:100%; height:auto; border-radius:34px; background:#17110c;}
+
+/* ---------- Estilos e paletas ---------- */
+.styles-wrap{background:var(--card); border-top:1px solid var(--line);}
+.styles-wrap h2{font-size:2.2rem; margin:12px 0 14px;}
+.styles-wrap .lead{color:var(--muted); max-width:560px; margin:0 0 40px;}
+.styles-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px 28px;}
+.style-card{margin:0;}
+.style-card img{display:block; width:100%; height:auto; border-radius:20px;
+  box-shadow:0 14px 34px -14px rgba(26,26,34,.4);}
+.style-card figcaption{margin-top:12px;}
+.style-card b{display:block; font-family:var(--serif); font-weight:600; font-size:1.08rem;}
+.style-card span{display:block; color:var(--muted); font-size:.92rem; margin-top:2px;}
+.palettes{margin-top:56px; text-align:center;}
+.palette-thumbs{display:flex; justify-content:center; gap:20px; margin-bottom:22px;}
+.palette-thumbs figure{margin:0; width:110px;}
+.palette-thumbs img{display:block; width:100%; height:auto; border-radius:14px;
+  box-shadow:0 10px 24px -12px rgba(26,26,34,.4);}
+.palette-thumbs figcaption{margin-top:8px; font-family:var(--serif); font-weight:600; font-size:.95rem;}
+.palette-note{max-width:520px; margin:0 auto 10px; color:var(--muted);}
+.pricing-note{max-width:520px; margin:0 auto; font-size:.92rem; color:var(--muted);
+  background:var(--accent-soft); border-radius:12px; padding:10px 16px; display:inline-block;}
+
+/* ---------- Quem fez ---------- */
+.maker{border-top:1px solid var(--line);}
+.maker-inner{max-width:620px;}
+.maker-inner h2{font-size:2rem; margin:12px 0 18px;}
+.maker-inner p{color:var(--ink-soft); margin:0 0 14px; font-size:1.05rem;}
+.maker-sign{font-family:var(--serif); font-style:italic; color:var(--muted); margin-top:18px;}
+
 /* ---------- Responsive ---------- */
 @media(max-width:760px){
   body{font-size:16px;}
@@ -171,4 +246,7 @@ footer.site .copy{opacity:.7; align-self:flex-end;}
   .feat .ico{margin-left:auto; margin-right:auto;}
   .prose h1{font-size:2.1rem;}
   footer.site .copy{align-self:flex-start;}
+  .styles-grid{grid-template-columns:repeat(2,minmax(0,1fr)); gap:26px 18px;}
+  .palette-thumbs{gap:14px;} .palette-thumbs figure{width:92px;}
+  .demo-inner h2,.styles-wrap h2{font-size:1.9rem;}
 }
