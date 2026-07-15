@@ -58,10 +58,9 @@ a:hover{text-decoration:underline;}
 @media(max-width:640px){ .nav-links a:not(.nav-cta){display:none;} }
 
 /* ---------- Buttons ---------- */
-.appstore-badge{display:inline-block; line-height:0; border-radius:9px;
-  transition:transform .15s, box-shadow .15s;}
+/* Badge oficial da Apple: usar como é, sem hover/efeito próprio (guideline) */
+.appstore-badge{display:inline-block; line-height:0;}
 .appstore-badge img{height:48px; width:auto; display:block;}
-.appstore-badge:hover{transform:translateY(-2px); box-shadow:0 10px 26px rgba(26,26,34,.22);}
 .cta-row{display:flex; gap:14px; align-items:center; flex-wrap:wrap;}
 .cta-note{font-size:.82rem; color:var(--muted);}
 
