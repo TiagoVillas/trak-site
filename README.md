@@ -19,17 +19,37 @@ Store↔TestFlight).
 ## Estrutura
 
 ```
-index.html         landing (hero, como funciona, trio, FAQ, CTA final)
+index.html         landing (hero animado, como funciona, vídeo, estilos, trio, quem fez, FAQ, CTA)
 configurar.html    tutorial de setup do wallpaper no lock screen (HowTo)
+habitos-na-tela-de-bloqueio.html      artigo SEO: por que ver o progresso funciona
+rastreador-de-habitos-iphone.html     artigo SEO: guia de escolha de app de hábitos
 privacidade.html   política de privacidade (LGPD)
-termos.html        termos de uso (assinatura trak Plus)
+termos.html        termos de uso (assinatura trak Pro)
 style.css          estilos compartilhados (paleta + componentes + responsivo)
 favicon.svg        logo/mark do app (recriado em SVG); + favicon-32.png
-img/               screenshots (png + webp), og.png, logo-mark.svg, app-store-badge.svg
+img/               screenshots (png + webp), modes/ (thumbs de estilos), promo.mp4 +
+                   poster, og.png, logo-mark.svg, app-store-badge.svg
 fonts/             Newsreader woff2 (400, 400 italic, 600)
+scripts/           gen_lockscreen.py (gera as células do mockup do hero)
 sitemap.xml robots.txt llms.txt   SEO + descoberta por IA
 docs/superpowers/specs/            design doc da reformulação
 ```
+
+### Hero animado (mockup do lock screen)
+
+O calendário do hero é HTML/CSS puro: 12 mini-meses com um `<i>` por dia, gerados
+por `scripts/gen_lockscreen.py` (Monday-first, dois tons de laranja determinísticos,
+delays `--d` escalonados em ordem cronológica). Para atualizar a data "de hoje" do
+mockup, edite `TODAY` no script, rode `python3 scripts/gen_lockscreen.py` e cole a
+saída no bloco `.ls-cal` do `index.html` (substituindo do comentário `gerado por`
+até o último `</span>`). A animação respeita `prefers-reduced-motion`.
+
+### Assets derivados
+
+- Thumbs de estilos (`img/modes/*.webp`): das renders em
+  `../trak/marketing/screenshots/raw/modes/` → `sips --resampleWidth 480` + `cwebp -q 78`.
+- Vídeo (`img/promo.mp4`, 346 KB): de `../marketing-hub/projects/trak/assets/promo/trak-promo.mp4`
+  → `ffmpeg` 720×1280, x264 CRF 28, `+faststart`; poster do frame ~3,5s em webp.
 
 ## Rodar local
 
@@ -53,8 +73,8 @@ Atenção: as URLs limpas (`/configurar`) só funcionam no Vercel. Local, acesse
 
 ## TODO (ações manuais)
 
-- [ ] **Link de download:** os 2 badges em `index.html` apontam para `href="#"`
-      (busque `appstore-badge` / o comentário `TODO(lançamento)`). Trocar pela URL da
-      App Store (ou TestFlight) no lançamento — é o único ponto de swap.
+- [x] **Link de download:** os 4 badges (2 na landing + 1 por artigo) apontam para
+      `https://apps.apple.com/br/app/trak/id6748291053` (Apple ID informado 15/07;
+      conferir quando o app estiver no ar — o link 404a até o release).
 - [ ] **Domínio primário no Vercel:** deixar `trakapp.com.br` (apex) como primary e
       `www` redirecionando para ele, para casar com os `canonical` (que apontam ao apex).
