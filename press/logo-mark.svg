@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="trak">
+  <rect width="1024" height="1024" rx="228" fill="#141420"/>
+  <g fill="#e8e8ec">
+    <rect x="225" y="225" width="252" height="252" rx="72"/>
+    <rect x="546" y="225" width="252" height="252" rx="72"/>
+    <rect x="225" y="546" width="252" height="252" rx="72"/>
+  </g>
+  <circle cx="672" cy="672" r="126" fill="#ff6b35"/>
+</svg>
