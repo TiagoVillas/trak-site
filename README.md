@@ -75,7 +75,7 @@ Atenção: as URLs limpas (`/configurar`) só funcionam no Vercel. Local, acesse
 ## TODO (ações manuais)
 
 - [x] **Link de download:** os 4 badges (2 na landing + 1 por artigo) apontam para
-      `https://apps.apple.com/br/app/trak/id6748291053` (Apple ID informado 15/07;
+      `https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=LP&mt=8` (Apple ID informado 15/07;
       conferir quando o app estiver no ar — o link 404a até o release).
 - [ ] **Domínio primário no Vercel:** deixar `trakapp.com.br` (apex) como primary e
       `www` redirecionando para ele, para casar com os `canonical` (que apontam ao apex).
