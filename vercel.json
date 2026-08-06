@@ -1,4 +1,31 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/pin",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=pinterest&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/ig",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=instagram&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/tt",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=tiktok1&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/tt2",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=tiktok2&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/c/:creator",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=:creator&mt=8",
+      "permanent": false
+    }
+  ]
 }
