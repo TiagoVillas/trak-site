@@ -23,6 +23,31 @@
       "permanent": false
     },
     {
+      "source": "/yt",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=youtube&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/x",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=twitter&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/rd",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=reddit&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/th",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=threads&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/fb",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=facebook&mt=8",
+      "permanent": false
+    },
+    {
       "source": "/c/:creator",
       "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=:creator&mt=8",
       "permanent": false
