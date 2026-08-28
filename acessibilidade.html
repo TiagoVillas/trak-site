@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acessibilidade — trak</title>
+  <meta name="description" content="O que o trak suporta em acessibilidade hoje, o que ainda não suporta, e como isso foi testado. Declaração de acessibilidade do aplicativo trak.">
+  <link rel="canonical" href="https://trakapp.com.br/acessibilidade">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+  <header class="nav"><div class="container">
+    <a href="/" class="brand"><img class="mark" src="/img/logo-mark.svg" width="28" height="28" alt=""> trak</a>
+    <nav class="nav-links">
+      <a href="/#como">Como funciona</a>
+      <a href="/configurar">Configurar</a>
+      <a href="/#baixar" class="nav-cta">Baixar</a>
+    </nav>
+  </div></header>
+
+  <main class="prose">
+    <p class="breadcrumb"><a href="/">Início</a> › Acessibilidade</p>
+    <h1>Acessibilidade</h1>
+    <p class="updated">Última atualização: 28 de agosto de 2026</p>
+
+    <p>O trak é feito por uma pessoa só, e esta página diz a verdade sobre onde ele está: o que já funciona, o que <em>ainda não</em> funciona, e como cada coisa foi testada.</p>
+
+    <div class="callout">
+      <strong>Por que dizer o que não funciona.</strong> Uma lista só de acertos é inútil para quem depende de acessibilidade para usar o app. Se você abrir o trak esperando algo que esta página promete e não encontrar, o problema é meu — e quero saber.
+    </div>
+
+    <h2>O que funciona hoje</h2>
+
+    <h3>Controle por Voz</h3>
+    <p>Todos os elementos tocáveis do app respondem aos comandos <em>“Mostrar nomes”</em> e <em>“Mostrar números”</em>. Verificado no aparelho, tela por tela.</p>
+
+    <h3>Interface escura</h3>
+    <p>O app tem tema claro e escuro, e ambos foram conferidos no aparelho. O wallpaper também: as paletas existem nas duas versões.</p>
+
+    <h3>Não depender de cor</h3>
+    <p>Nenhuma informação do trak é transmitida só por cor. Nos wallpapers, um dia concluído se distingue de um dia em aberto pelo <strong>tamanho</strong> do ponto, não pela cor; no modo Espiral, cada hábito ocupa um <strong>raio</strong> diferente, com legenda opcional nomeando os anéis na mesma ordem. Testado com o filtro <strong>Escala de Cinza</strong> do iOS ligado, que é o teste que a Apple define como definitivo.</p>
+
+    <h3>Contraste</h3>
+    <p>Todo texto do aplicativo tem contraste mínimo de 4,5:1 sobre o seu fundo. Isso não é uma promessa de esforço: é um teste automatizado que <strong>quebra a compilação</strong> se algum token de cor cair abaixo disso.</p>
+
+    <h3>Movimento reduzido</h3>
+    <p>O app respeita a preferência de movimento reduzido do sistema.</p>
+
+    <h2>O que ainda não funciona</h2>
+
+    <h3>VoiceOver: as telas sim, o wallpaper ainda não</h3>
+    <p>As telas do trak são navegáveis por VoiceOver. O que falta é o <strong>wallpaper</strong> — que é o produto em si, e uma visualização de dados — ter descrição estruturada.</p>
+    <p>Isso <strong>já está pronto no código</strong>: a prévia do wallpaper passa a se anunciar como <em>“Wallpaper do trak. Grade mensal, paleta Brasa”</em>, seguida de <em>“Hábitos concluídos hoje: 2 de 8”</em>, e o rotor oferece <em>“O que a imagem mostra”</em> com a descrição do modo. Mas a versão publicada na App Store ainda não tem essa mudança — ela chega na próxima atualização.</p>
+    <p><strong>Por isso o trak não declara suporte a VoiceOver na App Store hoje.</strong> Declarar antes de estar no ar seria prometer o que o app baixado não entrega.</p>
+
+    <h3>Texto maior</h3>
+    <p>O app ainda não garante que todo o layout se comporte bem nos tamanhos de Texto Maior do iOS. As telas principais foram ajustadas, mas não o app inteiro — então não declaramos suporte.</p>
+
+    <h2>Uma limitação conhecida</h2>
+    <p>No modo <strong>Espiral</strong>, os anéis de órbita — as linhas circulares por onde os pontos de cada hábito correm — têm contraste muito baixo em relação ao fundo. Os pontos são visíveis; as linhas, quase não. É decoração, não dado: nenhuma informação se perde se você não enxergar os anéis. Ainda assim, está aqui porque foi medido e é verdade.</p>
+
+    <h2>Como isso foi testado</h2>
+    <p>Não por leitura de código: no aparelho, com os recursos ligados.</p>
+    <ul>
+      <li><strong>Escala de Cinza</strong> — app inteiro percorrido com o filtro de cor ativo.</li>
+      <li><strong>Controle por Voz</strong> — “Mostrar nomes” e “Mostrar números” em cada tela.</li>
+      <li><strong>VoiceOver</strong> — navegação real, incluindo o rotor de conteúdo do wallpaper.</li>
+      <li><strong>Tema claro e escuro</strong> — percorridos separadamente.</li>
+      <li><strong>Contraste</strong> — medido, não estimado, com verificação automatizada em cada build.</li>
+    </ul>
+
+    <h2>Encontrou uma barreira?</h2>
+    <p>Escreva para <a href="mailto:contato@trakapp.com.br">contato@trakapp.com.br</a>. Diga qual recurso de acessibilidade você usa e onde travou — é a informação que faz a correção acontecer rápido. Respondo pessoalmente.</p>
+    <p>Se preferir, descreva o problema na avaliação da App Store: leio todas.</p>
+  </main>
+
+  <footer class="site"><div class="container inner">
+    <div>
+      <div class="links"><a href="/#como">Como funciona</a><a href="/configurar">Configurar</a><a href="/privacidade">Privacidade</a><a href="/termos">Termos</a><a href="/acessibilidade">Acessibilidade</a></div>
+      <div style="margin-top:14px;">Contato: <a href="mailto:contato@trakapp.com.br">contato@trakapp.com.br</a></div>
+    </div>
+    <div class="copy">© 2026 trak · feito por Tiago Villas</div>
+  </div></footer>
+
+</body>
+</html>

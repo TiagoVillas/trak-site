@@ -4,3 +4,4 @@ node_modules
 
 # brainstorm visual companion
 .superpowers/
+.claude/
