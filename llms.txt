@@ -3,7 +3,7 @@
 > trak é um app de acompanhamento de hábitos para iPhone (iOS 26+) que transforma
 > seu progresso em um calendário visual exibido no wallpaper do lock screen. Cada
 > hábito concluído acende uma célula; ao longo do ano, o calendário ganha forma.
-> Interface em português (pt-BR). Desenvolvido por Tiago Villas.
+> Interface em português (pt-BR) e inglês. Desenvolvido por Tiago Villas. Versão atual: 1.1.0 (6 de setembro de 2026).
 
 ## Como funciona
 
@@ -12,6 +12,8 @@
 - Um atalho do app Atalhos (Apple Shortcuts) coloca essa imagem no lock screen e a
   atualiza automaticamente toda noite, via uma automação diária (Hora do Dia, 00:05).
 - Recursos como sequências (streaks) ficam sempre à vista na tela de bloqueio.
+- Desde a 1.1.0: a própria foto do usuário pode ser o fundo do wallpaper (com o progresso
+  por cima), e há widgets de tela inicial e de bloqueio em vários estilos.
 
 ## Páginas
 
@@ -24,6 +26,7 @@
   guia de critérios para escolher um app de hábitos e onde o trak se encaixa.
 - [Privacidade](https://trakapp.com.br/privacidade): política de privacidade (LGPD).
 - [Termos](https://trakapp.com.br/termos): termos de uso e detalhes da assinatura trak Pro.
+- [Imprensa](https://trakapp.com.br/imprensa): kit de imprensa com fatos, screenshots 1.1.0 e logo.
 
 ## Fatos
 
@@ -31,7 +34,8 @@
 - Modelo de negócio: assinatura "trak Pro" (mensal e anual, com 7 dias de teste grátis
   no plano anual), via App Store. Plano grátis: até 3 hábitos e 2 estilos de wallpaper.
 - Estilos de wallpaper: Calendário do ano, Mês a mês, Calendário de vida, Consistência,
-  Semestre, Pulso, Espiral e Número da sequência. Paletas: Brasa, Maré, Musgo e personalizada.
+  Semestre, Pulso, Espiral e Número da sequência. Paletas: Brasa, Maré, Musgo, a Coleção
+  (Lavanda, Aurora, Âmbar, Carvão) e personalizada. Foto de fundo e Coleção são recursos Pro.
 - Privacidade: dados sincronizados de forma privada (infraestrutura Supabase); não há
   venda de dados nem publicidade de terceiros.
 - Atalho oficial: "Atualizar Wallpaper trak" (não deve ser renomeado).
