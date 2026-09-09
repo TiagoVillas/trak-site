@@ -44,7 +44,7 @@ en/
   privacy.html        ← privacidade.html
   terms.html          ← termos.html
   press.html          ← imprensa.html
-js/i18n.test.mjs      teste anti-deriva (node --test js/)
+js/i18n.test.mjs      teste anti-deriva (node js/canal.test.mjs && node js/i18n.test.mjs)
 ```
 
 Assets, `style.css`, `js/canal.js`, fontes e imagens: referenciados por caminho
@@ -133,7 +133,7 @@ Vercel Analytics: iguais.
 
 ## 9. Teste anti-deriva (`js/i18n.test.mjs`)
 
-Roda com `node --test js/` (mesmo runner do canal.test.mjs, sem dependência). Lê os
+Roda com `node js/canal.test.mjs && node js/i18n.test.mjs` (mesmo runner do canal.test.mjs, sem dependência). Lê os
 arquivos como texto e verifica, pra cada par da tabela fixa
 `[[ 'index.html','en/index.html','/','/en/' ], ...]`:
 
@@ -154,7 +154,7 @@ arquivos como texto e verifica, pra cada par da tabela fixa
 
 - Local: `python3 -m http.server 8765` e abrir os 6 `.html` em `/en/` (URL limpa só na
   Vercel). Conferir alternador no mobile (largura < 640).
-- `node --test js/` verde (canal + i18n).
+- `node js/canal.test.mjs && node js/i18n.test.mjs` verde (canal + i18n).
 - Um frame pro Tiago: home em inglês renderizada (regra dele: ver antes de aprovar).
 - Branch `site-en`, PR no trak-site, **commits sem trailer de co-autor** (regra do repo:
   a Vercel bloqueia o deploy em silêncio). Merge só com OK explícito; push em `main` =
