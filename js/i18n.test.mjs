@@ -7,7 +7,7 @@ import fs from 'node:fs'
 const ROOT = new URL('../', import.meta.url)
 const APEX = 'https://trakapp.com.br'
 const PARES = [
-  ['index.html',          'en/index.html',         '/',               '/en/'],
+  ['index.html',          'en/index.html',         '/',               '/en'],
   ['configurar.html',     'en/set-up.html',        '/configurar',     '/en/set-up'],
   ['acessibilidade.html', 'en/accessibility.html', '/acessibilidade', '/en/accessibility'],
   ['privacidade.html',    'en/privacy.html',       '/privacidade',    '/en/privacy'],

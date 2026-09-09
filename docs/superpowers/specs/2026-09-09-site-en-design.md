@@ -31,7 +31,7 @@ do app.
    gerador estático quebraria a regra "sem build" e obrigaria a templatizar as 8
    páginas atuais. O teste em Node é o que segura os 6 pares alinhados.
 
-Slugs: `/en/` · `/en/set-up` · `/en/accessibility` · `/en/privacy` · `/en/terms` ·
+Slugs: `/en` · `/en/set-up` · `/en/accessibility` · `/en/privacy` · `/en/terms` ·
 `/en/press`.
 
 ## 3. Estrutura
@@ -76,7 +76,7 @@ Página em português (só acrescenta):
 
 `x-default` aponta pro português: é o idioma principal do produto e da marca.
 Home em inglês: `<title>`, description, OG/Twitter, JSON-LD `MobileApplication`
-(`inLanguage: "en"`, `url` em `/en/`) e `FAQPage` traduzidos. `og:image` reaproveita o
+(`inLanguage: "en"`, `url` em `/en`) e `FAQPage` traduzidos. `og:image` reaproveita o
 `og.png` (imagem sem texto de idioma). `theme-color`, favicon, preload da fonte,
 Vercel Analytics: iguais.
 
@@ -89,8 +89,8 @@ Vercel Analytics: iguais.
 - **Mobile:** `.nav-links a:not(.nav-cta)` some abaixo de 640px; o alternador precisa
   ficar visível → regra nova em `style.css`: `.nav-links a.nav-lang{display:inline}`
   dentro do mesmo media query. Única mudança de CSS.
-- **Navegação e rodapé em inglês** linkam só páginas em inglês: Home (`/en/`), How it
-  works (`/en/#how`), Styles (`/en/#styles`), Set up (`/en/set-up`), Privacy, Terms,
+- **Navegação e rodapé em inglês** linkam só páginas em inglês: Home (`/en`), How it
+  works (`/en#how`), Styles (`/en#styles`), Set up (`/en/set-up`), Privacy, Terms,
   Accessibility, Press. Os artigos de SEO não aparecem no rodapé em inglês (não
   existem em inglês). Contato igual. Copy: "© 2026 trak · made by Tiago Villas".
 - Âncoras da home em inglês em inglês (`#how`, `#styles`, `#download`).
@@ -128,14 +128,14 @@ Vercel Analytics: iguais.
 
 - `sitemap.xml`: +6 `<url>` (as em inglês), sem `xhtml:link` (a `hreflang` já está no
   HTML; manter o sitemap simples como está).
-- `llms.txt`: uma linha "English version: https://trakapp.com.br/en/" e as 6 rotas.
+- `llms.txt`: uma linha "English version: https://trakapp.com.br/en" e as 6 rotas.
 - `robots.txt`: sem mudança.
 
 ## 9. Teste anti-deriva (`js/i18n.test.mjs`)
 
 Roda com `node js/canal.test.mjs && node js/i18n.test.mjs` (mesmo runner do canal.test.mjs, sem dependência). Lê os
 arquivos como texto e verifica, pra cada par da tabela fixa
-`[[ 'index.html','en/index.html','/','/en/' ], ...]`:
+`[[ 'index.html','en/index.html','/','/en' ], ...]`:
 
 1. `en/*.html` existe e tem `<html lang="en">`; o pt tem `lang="pt-BR"`.
 2. Canonical de cada um aponta pro próprio slug no apex.
