@@ -55,7 +55,8 @@ a:hover{text-decoration:underline;}
 .nav-links a{color:var(--ink); font-weight:500;}
 .nav-cta{background:var(--ink); color:#fff!important; padding:8px 16px; border-radius:10px; font-weight:600;}
 .nav-cta:hover{text-decoration:none; background:var(--ink-soft);}
-@media(max-width:640px){ .nav-links a:not(.nav-cta){display:none;} }
+@media(max-width:640px){ .nav-links a:not(.nav-cta):not(.nav-lang){display:none;} }
+.nav-links a.nav-lang{font-size:.8rem; letter-spacing:.06em; opacity:.75;}
 
 /* ---------- Buttons ---------- */
 /* Badge oficial da Apple: usar como é, sem hover/efeito próprio (guideline) */
