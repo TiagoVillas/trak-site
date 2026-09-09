@@ -68,17 +68,18 @@ const sitemap = read('sitemap.xml') || ''
 for (const [, , , rotaEn] of PARES) check(`sitemap tem ${rotaEn}`, has(sitemap, `<loc>${APEX}${rotaEn}</loc>`))
 
 // 8. badge e canal.js na home en
-const appStoreHrefs = (html) => [...html.matchAll(/href="(https:\/\/apps\.apple\.com[^"]*)"/g)].map((m) => m[1])
+const badgeHrefs = (html) => [...html.matchAll(/<a class="appstore-badge" href="([^"]*)"/g)].map((m) => m[1])
 const homeEn = read('en/index.html') || ''
 check('en/index.html carrega canal.js', has(homeEn, '<script defer src="/js/canal.js"></script>'))
-const badgesEn = appStoreHrefs(homeEn)
-check('en/index.html tem badges', badgesEn.length >= 1)
+const badgesEn = badgeHrefs(homeEn)
+check('en/index.html tem 2 badges', badgesEn.length === 2, String(badgesEn.length))
 check('badges en com ct=LP-en', badgesEn.every((b) => b.includes('&ct=LP-en&')), badgesEn.join(' | '))
 
 // 9. páginas pt do escopo seguem ct=LP
 for (const [pt] of PARES) {
-  const badges = appStoreHrefs(read(pt) || '').filter((b) => b.includes('ct='))
+  const badges = badgeHrefs(read(pt) || '')
   check(`${pt} badges ct=LP`, badges.every((b) => b.includes('&ct=LP&')), badges.join(' | '))
+  if (pt === 'index.html') check(`${pt} tem 2 badges`, badges.length === 2, String(badges.length))
 }
 
 console.log(fails ? `\n${fails} falha(s)` : '\ntudo ok')
