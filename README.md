@@ -26,6 +26,8 @@ habitos-na-tela-de-bloqueio.html      artigo SEO: por que ver o progresso funcio
 rastreador-de-habitos-iphone.html     artigo SEO: guia de escolha de app de hábitos
 privacidade.html   política de privacidade (LGPD)
 termos.html        termos de uso (assinatura trak Pro)
+en/                versões em inglês das 6 páginas (home, set-up, accessibility, privacy,
+                   terms, press); pares ligados por hreflang; teste: node js/i18n.test.mjs
 style.css          estilos compartilhados (paleta + componentes + responsivo)
 favicon.svg        logo/mark do app (recriado em SVG); + favicon-32.png
 img/               screenshots (png + webp), modes/ (thumbs de estilos), promo.mp4 +
@@ -60,6 +62,8 @@ python3 -m http.server 8765   # http://localhost:8765/index.html
 
 Atenção: as URLs limpas (`/configurar`) só funcionam no Vercel. Local, acesse os
 `.html` diretamente — no servidor estático simples elas dão 404 (esperado).
+
+Testes: `node js/canal.test.mjs && node js/i18n.test.mjs`
 
 ## Identidade / SEO
 
