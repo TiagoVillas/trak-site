@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>trak — the habit tracker that becomes your iPhone wallpaper</title>
+  <meta name="description" content="trak turns your habits into your wallpaper: a calendar that fills in on your iPhone Lock Screen, one cell at a time.">
+  <link rel="canonical" href="https://trakapp.com.br/en">
+  <link rel="alternate" hreflang="pt-BR" href="https://trakapp.com.br/">
+  <link rel="alternate" hreflang="en" href="https://trakapp.com.br/en">
+  <link rel="alternate" hreflang="x-default" href="https://trakapp.com.br/">
+  <meta name="theme-color" content="#f6f4ef">
+
+  <!-- Pinterest: domain claim (2026-08-13). Do not remove — it is what
+       attributes to trak every pin pointing here, including the ones saved
+       by other people, and unlocks the metrics for those pins. -->
+  <meta name="p:domain_verify" content="27f6dee87e9cdd57136a2d261305a462">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="trak">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:url" content="https://trakapp.com.br/en">
+  <meta property="og:title" content="trak — the habit tracker that becomes your iPhone wallpaper">
+  <meta property="og:description" content="Your habits become a calendar that fills in on your iPhone Lock Screen, one cell at a time.">
+  <meta property="og:image" content="https://trakapp.com.br/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="trak — the habit tracker that becomes your iPhone wallpaper">
+  <meta name="twitter:description" content="Your habits become a calendar that fills in on your iPhone Lock Screen.">
+  <meta name="twitter:image" content="https://trakapp.com.br/img/og.png">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/newsreader-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "trak",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "iOS 26+",
+    "url": "https://trakapp.com.br/en",
+    "description": "Habit tracker that turns your progress into a calendar on your iPhone Lock Screen wallpaper.",
+    "inLanguage": "en",
+    "image": "https://trakapp.com.br/img/og.png",
+    "author": { "@type": "Person", "name": "Tiago Villas" },
+    "offers": { "@type": "Offer", "category": "subscription", "name": "trak Pro" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What do you get for free in trak?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The free plan tracks up to 2 habits and includes 2 wallpaper styles (Year calendar and Month by month), with no time limit. trak Pro unlocks unlimited habits, every style and the custom palette." } },
+      { "@type": "Question", "name": "How much does trak Pro cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "trak Pro comes as a monthly or an annual plan, with a 14-day free trial on the annual plan (7 days on the monthly one). Purchases are handled by Apple's App Store." } },
+      { "@type": "Question", "name": "Does trak work on Android?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For now trak is iPhone only, running iOS 26 or later." } },
+      { "@type": "Question", "name": "How does the calendar show up on the Lock Screen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A shortcut in Apple's Shortcuts app updates your wallpaper automatically every night. There is a full step-by-step guide on the Set up page." } },
+      { "@type": "Question", "name": "Where is my data stored?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Your habits and preferences sync privately to your account on Supabase infrastructure, over encrypted connections. trak does not sell your data and does not use it for advertising." } }
+    ]
+  }
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/js/canal.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav"><div class="container">
+    <a href="/en" class="brand"><img class="mark" src="/img/logo-mark.svg" width="28" height="28" alt=""> trak</a>
+    <nav class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#styles">Styles</a>
+      <a href="/en/set-up">Set up</a>
+      <a href="#download" class="nav-cta">Download</a>
+      <a class="nav-lang" href="/" hreflang="pt-BR" lang="pt-BR" aria-label="Ler em português">PT</a>
+    </nav>
+  </div></header>
+
+  <main>
+  <!-- HERO -->
+  <section class="hero"><div class="container hero-inner">
+    <div>
+      <p class="overline">trak</p>
+      <h1>What you <span class="serif-em">see</span>,<br>you do.</h1>
+      <p class="sub">Your iPhone Lock Screen becomes a calendar of your habits: one cell fills in for every day you follow through, every morning.</p>
+      <div class="cta-row" id="download">
+        <a class="appstore-badge" href="https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=LP-en&mt=8" target="_blank" rel="noopener" aria-label="Download on the App Store"><img src="/img/app-store-badge-en.svg" width="144" height="48" alt="Download on the App Store"></a>
+        <span class="cta-note">iPhone · iOS 26+ · free</span>
+      </div>
+    </div>
+    <div class="phone">
+      <div class="ls" role="img" aria-label="iPhone Lock Screen with the trak habit calendar: the completed days of the year light up in orange, one by one">
+        <div class="ls-top">
+          <span class="ls-date">Wednesday, July 15</span>
+          <span class="ls-clock">09:41</span>
+        </div>
+        <div class="ls-cal">
+          <!-- gerado por scripts/gen_lockscreen.py — 196 dias acesos, anim ~2.5s -->
+          <span class="mo"><b>Jan</b><span class="mg"><u></u><u></u><u></u><i class="a" style="--d:0.35s"></i><i class="b" style="--d:0.36s"></i><i class="b" style="--d:0.37s"></i><i class="a" style="--d:0.38s"></i><i class="a" style="--d:0.39s"></i><i class="a" style="--d:0.40s"></i><i class="b" style="--d:0.42s"></i><i class="b" style="--d:0.43s"></i><i class="a" style="--d:0.44s"></i><i class="a" style="--d:0.45s"></i><i class="b" style="--d:0.46s"></i><i class="b" style="--d:0.47s"></i><i class="a" style="--d:0.48s"></i><i class="a" style="--d:0.49s"></i><i class="a" style="--d:0.50s"></i><i class="b" style="--d:0.51s"></i><i class="b" style="--d:0.53s"></i><i class="a" style="--d:0.54s"></i><i class="a" style="--d:0.55s"></i><i class="b" style="--d:0.56s"></i><i class="b" style="--d:0.57s"></i><i class="a" style="--d:0.58s"></i><i class="a" style="--d:0.59s"></i><i class="a" style="--d:0.60s"></i><i class="b" style="--d:0.61s"></i><i class="b" style="--d:0.62s"></i><i class="a" style="--d:0.64s"></i><i class="a" style="--d:0.65s"></i><i class="b" style="--d:0.66s"></i><i class="b" style="--d:0.67s"></i><i class="a" style="--d:0.68s"></i></span></span>
+          <span class="mo"><b>Feb</b><span class="mg"><u></u><u></u><u></u><u></u><u></u><u></u><i class="a" style="--d:0.69s"></i><i class="a" style="--d:0.70s"></i><i class="a" style="--d:0.71s"></i><i class="b" style="--d:0.72s"></i><i class="b" style="--d:0.73s"></i><i class="a" style="--d:0.75s"></i><i class="a" style="--d:0.76s"></i><i class="b" style="--d:0.77s"></i><i class="b" style="--d:0.78s"></i><i class="a" style="--d:0.79s"></i><i class="a" style="--d:0.80s"></i><i class="a" style="--d:0.81s"></i><i class="b" style="--d:0.82s"></i><i class="b" style="--d:0.83s"></i><i class="a" style="--d:0.84s"></i><i class="a" style="--d:0.86s"></i><i class="b" style="--d:0.87s"></i><i class="b" style="--d:0.88s"></i><i class="a" style="--d:0.89s"></i><i class="a" style="--d:0.90s"></i><i class="a" style="--d:0.91s"></i><i class="b" style="--d:0.92s"></i><i class="b" style="--d:0.93s"></i><i class="a" style="--d:0.94s"></i><i class="a" style="--d:0.95s"></i><i class="b" style="--d:0.97s"></i><i class="b" style="--d:0.98s"></i><i class="a" style="--d:0.99s"></i></span></span>
+          <span class="mo"><b>Mar</b><span class="mg"><u></u><u></u><u></u><u></u><u></u><u></u><i class="b" style="--d:1.00s"></i><i class="b" style="--d:1.01s"></i><i class="a" style="--d:1.02s"></i><i class="a" style="--d:1.03s"></i><i class="b" style="--d:1.04s"></i><i class="b" style="--d:1.05s"></i><i class="a" style="--d:1.06s"></i><i class="a" style="--d:1.08s"></i><i class="a" style="--d:1.09s"></i><i class="b" style="--d:1.10s"></i><i class="b" style="--d:1.11s"></i><i class="a" style="--d:1.12s"></i><i class="a" style="--d:1.13s"></i><i class="b" style="--d:1.14s"></i><i class="b" style="--d:1.15s"></i><i class="a" style="--d:1.16s"></i><i class="a" style="--d:1.17s"></i><i class="a" style="--d:1.19s"></i><i class="b" style="--d:1.20s"></i><i class="b" style="--d:1.21s"></i><i class="a" style="--d:1.22s"></i><i class="a" style="--d:1.23s"></i><i class="b" style="--d:1.24s"></i><i class="b" style="--d:1.25s"></i><i class="a" style="--d:1.26s"></i><i class="a" style="--d:1.27s"></i><i class="a" style="--d:1.28s"></i><i class="b" style="--d:1.30s"></i><i class="b" style="--d:1.31s"></i><i class="a" style="--d:1.32s"></i><i class="a" style="--d:1.33s"></i></span></span>
+          <span class="mo"><b>Apr</b><span class="mg"><u></u><u></u><i class="a" style="--d:1.34s"></i><i class="b" style="--d:1.35s"></i><i class="b" style="--d:1.36s"></i><i class="a" style="--d:1.37s"></i><i class="a" style="--d:1.38s"></i><i class="a" style="--d:1.40s"></i><i class="b" style="--d:1.41s"></i><i class="b" style="--d:1.42s"></i><i class="a" style="--d:1.43s"></i><i class="a" style="--d:1.44s"></i><i class="b" style="--d:1.45s"></i><i class="b" style="--d:1.46s"></i><i class="a" style="--d:1.47s"></i><i class="a" style="--d:1.48s"></i><i class="a" style="--d:1.49s"></i><i class="b" style="--d:1.50s"></i><i class="b" style="--d:1.52s"></i><i class="a" style="--d:1.53s"></i><i class="a" style="--d:1.54s"></i><i class="b" style="--d:1.55s"></i><i class="b" style="--d:1.56s"></i><i class="a" style="--d:1.57s"></i><i class="a" style="--d:1.58s"></i><i class="a" style="--d:1.59s"></i><i class="b" style="--d:1.60s"></i><i class="b" style="--d:1.61s"></i><i class="a" style="--d:1.63s"></i><i class="a" style="--d:1.64s"></i><i class="b" style="--d:1.65s"></i><i class="b" style="--d:1.66s"></i></span></span>
+          <span class="mo"><b>May</b><span class="mg"><u></u><u></u><u></u><u></u><i class="a" style="--d:1.67s"></i><i class="a" style="--d:1.68s"></i><i class="a" style="--d:1.69s"></i><i class="b" style="--d:1.70s"></i><i class="b" style="--d:1.71s"></i><i class="a" style="--d:1.73s"></i><i class="a" style="--d:1.74s"></i><i class="b" style="--d:1.75s"></i><i class="b" style="--d:1.76s"></i><i class="a" style="--d:1.77s"></i><i class="a" style="--d:1.78s"></i><i class="a" style="--d:1.79s"></i><i class="b" style="--d:1.80s"></i><i class="b" style="--d:1.81s"></i><i class="a" style="--d:1.82s"></i><i class="a" style="--d:1.83s"></i><i class="b" style="--d:1.85s"></i><i class="b" style="--d:1.86s"></i><i class="a" style="--d:1.87s"></i><i class="a" style="--d:1.88s"></i><i class="a" style="--d:1.89s"></i><i class="b" style="--d:1.90s"></i><i class="b" style="--d:1.91s"></i><i class="a" style="--d:1.92s"></i><i class="a" style="--d:1.93s"></i><i class="b" style="--d:1.94s"></i><i class="b" style="--d:1.96s"></i><i class="a" style="--d:1.97s"></i><i class="a" style="--d:1.98s"></i><i class="a" style="--d:1.99s"></i><i class="b" style="--d:2.00s"></i></span></span>
+          <span class="mo"><b>Jun</b><span class="mg"><i class="b" style="--d:2.01s"></i><i class="b" style="--d:2.02s"></i><i class="a" style="--d:2.03s"></i><i class="a" style="--d:2.04s"></i><i class="b" style="--d:2.05s"></i><i class="b" style="--d:2.07s"></i><i class="a" style="--d:2.08s"></i><i class="a" style="--d:2.09s"></i><i class="a" style="--d:2.10s"></i><i class="b" style="--d:2.11s"></i><i class="b" style="--d:2.12s"></i><i class="a" style="--d:2.13s"></i><i class="a" style="--d:2.14s"></i><i class="b" style="--d:2.15s"></i><i class="b" style="--d:2.17s"></i><i class="a" style="--d:2.18s"></i><i class="a" style="--d:2.19s"></i><i class="a" style="--d:2.20s"></i><i class="b" style="--d:2.21s"></i><i class="b" style="--d:2.22s"></i><i class="a" style="--d:2.23s"></i><i class="a" style="--d:2.24s"></i><i class="b" style="--d:2.25s"></i><i class="b" style="--d:2.26s"></i><i class="a" style="--d:2.27s"></i><i class="a" style="--d:2.29s"></i><i class="a" style="--d:2.30s"></i><i class="b" style="--d:2.31s"></i><i class="b" style="--d:2.32s"></i><i class="a" style="--d:2.33s"></i></span></span>
+          <span class="mo"><b>Jul</b><span class="mg"><u></u><u></u><i class="a" style="--d:2.34s"></i><i class="b" style="--d:2.35s"></i><i class="b" style="--d:2.36s"></i><i class="a" style="--d:2.37s"></i><i class="a" style="--d:2.38s"></i><i class="a" style="--d:2.40s"></i><i class="b" style="--d:2.41s"></i><i class="b" style="--d:2.42s"></i><i class="a" style="--d:2.43s"></i><i class="a" style="--d:2.44s"></i><i class="b" style="--d:2.45s"></i><i class="b" style="--d:2.46s"></i><i class="a" style="--d:2.47s"></i><i class="a" style="--d:2.48s"></i><i class="t" style="--d:2.50s"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span>
+          <span class="mo"><b>Aug</b><span class="mg"><u></u><u></u><u></u><u></u><u></u><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span>
+          <span class="mo"><b>Sep</b><span class="mg"><u></u><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span>
+          <span class="mo"><b>Oct</b><span class="mg"><u></u><u></u><u></u><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span>
+          <span class="mo"><b>Nov</b><span class="mg"><u></u><u></u><u></u><u></u><u></u><u></u><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span>
+          <span class="mo"><b>Dec</b><span class="mg"><u></u><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span>
+        </div>
+        <div class="ls-foot">2026&ensp;·&ensp;trak</div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how"><div class="container idea">
+    <div class="phone">
+      <picture>
+        <source srcset="/img/home-en.webp" type="image/webp">
+        <img src="/img/home-en.png" width="552" height="1196" alt="trak home screen showing today's habit list with streaks and completed check marks">
+      </picture>
+    </div>
+    <div class="order-text">
+      <p class="overline">how it works</p>
+      <h2>Your progress, where you can't ignore it.</h2>
+      <ul class="steps">
+        <li><span class="n">1</span><span class="t"><b>Mark the habit as done.</b> <span>One cell lights up in the year calendar.</span></span></li>
+        <li><span class="n">2</span><span class="t"><b>The calendar becomes your wallpaper.</b> <span>A shortcut updates the Lock Screen every night.</span></span></li>
+        <li><span class="n">3</span><span class="t"><b>You watch the year take shape.</b> <span>Every time you pick up your phone.</span></span></li>
+      </ul>
+    </div>
+  </div></section>
+
+  <!-- VIDEO -->
+  <section class="section demo" id="demo"><div class="container demo-inner">
+    <p class="overline">see it in action</p>
+    <h2>Every day leaves a <span class="serif-em">mark</span>.</h2>
+    <p class="lead">Thirty seconds of the habit wallpaper in motion — from the first check to a whole year taking shape.</p>
+    <div class="phone demo-phone">
+      <video controls preload="none" playsinline poster="/img/promo-poster.webp" width="720" height="1280" aria-label="trak demo video">
+        <source src="/img/promo.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div></section>
+
+  <!-- STYLES -->
+  <section class="section styles-wrap" id="styles"><div class="container">
+    <p class="overline">styles and palettes</p>
+    <h2>Your progress becomes art.</h2>
+    <p class="lead">Not a dull chart: choose how your consistency shows up on screen — a collection of styles that keeps growing.</p>
+
+    <div class="styles-grid">
+      <figure class="style-card">
+        <img src="/img/modes/year.webp" width="480" height="1043" alt="trak wallpaper in the Year calendar style: a grid with one small square per day, completed days in orange" loading="lazy">
+        <figcaption><b>Year calendar</b><span>A whole year, one small square per day.</span></figcaption>
+      </figure>
+      <figure class="style-card">
+        <img src="/img/modes/monthly.webp" width="480" height="1043" alt="trak wallpaper in the Month by month style: twelve mini calendars" loading="lazy">
+        <figcaption><b>Month by month</b><span>Twelve mini calendars, side by side.</span></figcaption>
+      </figure>
+      <figure class="style-card">
+        <img src="/img/modes/life.webp" width="480" height="1043" alt="trak wallpaper in the Life in weeks style: your journey laid out in decades" loading="lazy">
+        <figcaption><b>Life in weeks</b><span>Your journey laid out in decades.</span></figcaption>
+      </figure>
+      <figure class="style-card">
+        <img src="/img/modes/streak.webp" width="480" height="1043" alt="trak wallpaper in the Consistency style: the percentage of days completed, front and center" loading="lazy">
+        <figcaption><b>Consistency</b><span>The percentage of days you followed through.</span></figcaption>
+      </figure>
+      <figure class="style-card">
+        <img src="/img/modes/pulse.webp" width="480" height="1043" alt="trak wallpaper in the Pulse style: the last 90 days drawn as a heartbeat" loading="lazy">
+        <figcaption><b>Pulse</b><span>Your last 90 days as a heartbeat.</span></figcaption>
+      </figure>
+      <figure class="style-card">
+        <img src="/img/modes/spiral.webp" width="480" height="1043" alt="trak wallpaper in the Spiral style: each habit is a ring in orbit, like a solar system" loading="lazy">
+        <figcaption><b>Spiral</b><span>Each habit is a ring, like a solar system.</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="palettes">
+      <div class="palette-thumbs">
+        <figure><img src="/img/modes/year-ember.webp" width="480" height="1043" alt="Ember palette: shades of orange on a dark background" loading="lazy"><figcaption>Ember</figcaption></figure>
+        <figure><img src="/img/modes/year-tide.webp" width="480" height="1043" alt="Tide palette: shades of blue on a dark background" loading="lazy"><figcaption>Tide</figcaption></figure>
+        <figure><img src="/img/modes/year-moss.webp" width="480" height="1043" alt="Moss palette: shades of green on a dark background" loading="lazy"><figcaption>Moss</figcaption></figure>
+      </div>
+      <p class="palette-note">Three hand-drawn palettes — <b>Ember</b>, <b>Tide</b> and <b>Moss</b> — plus one that is entirely yours, with background, accent and gradient editable cell by cell.</p>
+      <p class="pricing-note">Free: 2 habits and 2 styles, with no time limit. <b>trak Pro</b> unlocks everything — with a 14-day trial on the annual plan.</p>
+    </div>
+  </div></section>
+
+  <!-- TRIO -->
+  <div class="trio-wrap"><div class="container trio">
+    <div class="feat">
+      <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/><rect x="6.5" y="12" width="3" height="3" rx=".6" fill="currentColor" stroke="none"/><rect x="11" y="12" width="3" height="3" rx=".6" fill="currentColor" stroke="none"/></svg></div>
+      <h3>Habits become wallpaper</h3>
+      <p>The calendar for the whole year lives on your Lock Screen and updates itself.</p>
+    </div>
+    <div class="feat">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c1.5 3 4.5 4.2 4.5 8a4.5 4.5 0 1 1-9 0c0-1.6.8-2.8 1.6-3.6.2 1 .9 1.7 1.7 1.7C12 9 11 6 12 3z"/></svg></div>
+      <h3>Streaks you can see</h3>
+      <p>Day counts always in sight. The pull of not breaking the chain.</p>
+    </div>
+    <div class="feat">
+      <div class="ico"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.4"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.4"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.4"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.4" fill="currentColor" stroke="none"/></svg></div>
+      <h3>The year taking shape</h3>
+      <p>Twelve months, one cell at a time. An honest portrait of your consistency.</p>
+    </div>
+  </div></div>
+
+  <!-- WHO MADE IT -->
+  <section class="section maker"><div class="container maker-inner">
+    <p class="overline">who made it</p>
+    <h2>Made by one person. Really.</h2>
+    <p>Hi, I'm Tiago. I built trak on my own, here in Brazil, because I wanted a habit tracker I couldn't ignore — and none of them put my progress where I actually look: the Lock Screen. Every detail, from the app to the shortcut, went through my hands.</p>
+    <p>If something doesn't work for you, the email down in the footer lands straight in my inbox.</p>
+    <p class="maker-sign">— Tiago Villas, creator of trak</p>
+  </div></section>
+
+  <!-- FAQ -->
+  <section class="section"><div class="container faq">
+    <p class="overline">questions</p>
+    <h2>Before you start</h2>
+    <p class="lead">The most common questions about trak.</p>
+
+    <details class="qa"><summary>What do you get for free in trak?</summary>
+      <p>The free plan tracks up to <strong>2 habits</strong> and includes <strong>2 wallpaper styles</strong> (Year calendar and Month by month), with no time limit. <strong>trak Pro</strong> unlocks unlimited habits, every style and the custom palette.</p></details>
+    <details class="qa"><summary>How much does trak Pro cost?</summary>
+      <p>trak Pro comes as a <strong>monthly or an annual plan</strong>, with a <strong>14-day free trial</strong> on the annual plan (7 days on the monthly one). Purchases are handled by Apple's App Store, and you can cancel any time in your account settings.</p></details>
+    <details class="qa"><summary>Does trak work on Android?</summary>
+      <p>For now trak is iPhone only, running iOS 26 or later.</p></details>
+    <details class="qa"><summary>How does the calendar show up on the Lock Screen?</summary>
+      <p>A shortcut in Apple's Shortcuts app updates your wallpaper automatically every night. There is a <a href="/en/set-up">full step-by-step guide here</a>.</p></details>
+    <details class="qa"><summary>Where is my data stored?</summary>
+      <p>Your habits and preferences sync privately to your account. trak does not sell your data and does not use it for advertising — see the <a href="/en/privacy">privacy policy</a>.</p></details>
+  </div></section>
+
+  <!-- FINAL CTA -->
+  <section class="final" id="start"><div class="inner">
+    <h2>Start your year today.</h2>
+    <p>Download trak and let every day leave its mark on your calendar.</p>
+    <a class="appstore-badge" href="https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=LP-en&mt=8" target="_blank" rel="noopener" aria-label="Download on the App Store"><img src="/img/app-store-badge-en.svg" width="144" height="48" alt="Download on the App Store"></a>
+  </div></section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site"><div class="container inner">
+    <div>
+      <div class="links"><a href="#how">How it works</a><a href="#styles">Styles</a><a href="/en/set-up">Set up</a><a href="/en/privacy">Privacy</a><a href="/en/terms">Terms</a><a href="/en/press">Press</a><a href="/en/accessibility">Accessibility</a></div>
+      <div style="margin-top:14px;">Contact: <a href="mailto:contato@trakapp.com.br">contato@trakapp.com.br</a></div>
+    </div>
+    <div class="copy">© 2026 trak · made by Tiago Villas</div>
+  </div></footer>
+
+</body>
+</html>

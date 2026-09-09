@@ -55,6 +55,8 @@ Esquecer um destes deixa a página órfã. Ver `acessibilidade.html` como modelo
 6. Conteúdo em `<main class="prose">`: breadcrumb → `<h1>` → `<p class="updated">`
 7. Testar local (`python3 -m http.server 8765`) — as URLs limpas só funcionam na Vercel,
    então acesse o `.html` direto; 404 em `/rota` no servidor local é esperado
+8. Se a página tiver par em inglês, criar `en/<slug>.html` e adicionar o par em
+   `js/i18n.test.mjs`
 
 ## Conteúdo
 

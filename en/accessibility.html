@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility — trak</title>
+  <meta name="description" content="What trak supports in accessibility today, what it does not yet, and how that was tested. Accessibility statement for the trak app.">
+  <link rel="canonical" href="https://trakapp.com.br/en/accessibility">
+  <link rel="alternate" hreflang="pt-BR" href="https://trakapp.com.br/acessibilidade">
+  <link rel="alternate" hreflang="en" href="https://trakapp.com.br/en/accessibility">
+  <link rel="alternate" hreflang="x-default" href="https://trakapp.com.br/acessibilidade">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+  <header class="nav"><div class="container">
+    <a href="/en" class="brand"><img class="mark" src="/img/logo-mark.svg" width="28" height="28" alt=""> trak</a>
+    <nav class="nav-links">
+      <a href="/en#how">How it works</a>
+      <a href="/en/set-up">Set up</a>
+      <a href="/en#download" class="nav-cta">Download</a>
+      <a class="nav-lang" href="/acessibilidade" hreflang="pt-BR" lang="pt-BR" aria-label="Ler em português">PT</a>
+    </nav>
+  </div></header>
+
+  <main class="prose">
+    <p class="breadcrumb"><a href="/en">Home</a> › Accessibility</p>
+    <h1>Accessibility</h1>
+    <p class="updated">Last updated: September 9, 2026</p>
+
+    <p>trak is built by one person, and this page tells the truth about where it stands: what already works, what does <em>not yet</em> work, and how each of those was tested.</p>
+
+    <div class="callout">
+      <strong>Why say what doesn't work.</strong> A list of wins alone is useless to anyone who depends on accessibility to use the app. If you open trak expecting something this page promises and it isn't there, the problem is mine — and I want to know.
+    </div>
+
+    <h2>What works today</h2>
+
+    <h3>VoiceOver</h3>
+    <p>trak's screens can be navigated with VoiceOver, and since version 1.1.0 (September 6, 2026) the <strong>wallpaper</strong> — which is the product itself, and a data visualization — has a structured description too. The preview announces itself as <em>“trak wallpaper. Month by month, Ember palette.”</em>, followed by <em>“Habits completed today, 2 of 8”</em>, and the rotor offers <em>“What the image shows”</em> with the description of the style. On the customization screen, the style carousel is an adjustable element: swipe up or down to change the style and double-tap to choose it.</p>
+    <p>That is why trak began declaring VoiceOver support on the App Store in September 2026 — only after the version with that change was published.</p>
+
+    <h3>Voice Control</h3>
+    <p>Every tappable element in the app responds to the <em>“Show names”</em> and <em>“Show numbers”</em> commands. Verified on device, screen by screen.</p>
+
+    <h3>Dark Interface</h3>
+    <p>The app has a light and a dark theme, and both were checked on device. So was the wallpaper: the palettes exist in both versions.</p>
+
+    <h3>Differentiate Without Color</h3>
+    <p>No information in trak is conveyed by color alone. In the wallpapers, a completed day is told apart from an open day by the <strong>size</strong> of the dot, not by its color; in the Spiral style, each habit occupies a different <strong>radius</strong>, with an optional legend naming the rings in the same order. Tested with the iOS <strong>Grayscale</strong> color filter turned on, which is the test Apple defines as definitive.</p>
+
+    <h3>Sufficient Contrast</h3>
+    <p>All text in the app has a minimum contrast of 4.5:1 against its background. That isn't a promise of effort: it's an automated test that <strong>breaks the build</strong> if any color token falls below it.</p>
+
+    <h3>Reduce Motion</h3>
+    <p>The app respects the system's reduce motion preference.</p>
+
+    <h2>What doesn't work yet</h2>
+
+    <h3>Larger Text</h3>
+    <p>The app doesn't yet guarantee that every layout behaves well at the iOS Larger Text sizes. The main screens were adjusted, but not the whole app — so we don't declare support.</p>
+
+    <h2>A known limitation</h2>
+    <p>In the <strong>Spiral</strong> style, the orbit rings — the circular lines the dots of each habit run along — have very low contrast against the background. The dots are visible; the lines, barely. They're decoration, not data: no information is lost if you can't see the rings. Even so, it's here because it was measured and it's true.</p>
+
+    <h2>How this was tested</h2>
+    <p>Not by reading code: on device, with the features turned on.</p>
+    <ul>
+      <li><strong>Grayscale</strong> — the whole app walked through with the color filter active.</li>
+      <li><strong>Voice Control</strong> — “Show names” and “Show numbers” on every screen.</li>
+      <li><strong>VoiceOver</strong> — real navigation, including the wallpaper's content rotor.</li>
+      <li><strong>Light and dark themes</strong> — walked through separately.</li>
+      <li><strong>Contrast</strong> — measured, not estimated, with an automated check on every build.</li>
+    </ul>
+
+    <h2>Ran into a barrier?</h2>
+    <p>Write to <a href="mailto:contato@trakapp.com.br">contato@trakapp.com.br</a>. Tell me which accessibility feature you use and where you got stuck — that's the information that makes the fix happen fast. I reply personally.</p>
+    <p>If you'd rather, describe the problem in an App Store review: I read them all.</p>
+  </main>
+
+  <footer class="site"><div class="container inner">
+    <div>
+      <div class="links"><a href="/en#how">How it works</a><a href="/en/set-up">Set up</a><a href="/en/privacy">Privacy</a><a href="/en/terms">Terms</a><a href="/en/press">Press</a><a href="/en/accessibility">Accessibility</a></div>
+      <div style="margin-top:14px;">Contact: <a href="mailto:contato@trakapp.com.br">contato@trakapp.com.br</a></div>
+    </div>
+    <div class="copy">© 2026 trak · made by Tiago Villas</div>
+  </div></footer>
+
+</body>
+</html>

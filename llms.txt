@@ -32,7 +32,7 @@
 
 - Plataforma: iPhone, iOS 26 ou mais recente. Não há versão Android no momento.
 - Modelo de negócio: assinatura "trak Pro" (mensal e anual, com 7 dias de teste grátis
-  no plano anual), via App Store. Plano grátis: até 3 hábitos e 2 estilos de wallpaper.
+  no mensal e 14 dias no anual), via App Store. Plano grátis: até 2 hábitos e 2 estilos de wallpaper.
 - Estilos de wallpaper: Calendário do ano, Mês a mês, Calendário de vida, Consistência,
   Semestre, Pulso, Espiral e Número da sequência. Paletas: Brasa, Maré, Musgo, a Coleção
   (Lavanda, Aurora, Âmbar, Carvão) e personalizada. Foto de fundo e Coleção são recursos Pro.
@@ -40,3 +40,13 @@
   venda de dados nem publicidade de terceiros.
 - Atalho oficial: "Atualizar Wallpaper trak" (não deve ser renomeado).
 - Contato: contato@trakapp.com.br
+
+## English
+
+English version: https://trakapp.com.br/en
+https://trakapp.com.br/en
+https://trakapp.com.br/en/set-up
+https://trakapp.com.br/en/accessibility
+https://trakapp.com.br/en/privacy
+https://trakapp.com.br/en/terms
+https://trakapp.com.br/en/press
