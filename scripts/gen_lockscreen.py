@@ -12,6 +12,13 @@ YEAR = 2026
 TODAY = date(2026, 7, 15)
 MONTHS = ["jan", "fev", "mar", "abr", "mai", "jun",
           "jul", "ago", "set", "out", "nov", "dez"]
+# Estes rótulos valem para index.html (pt-BR). A home em inglês
+# (en/index.html) usa os rótulos em inglês, capitalizados —
+# Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec —
+# como o wallpaper do app renderiza em inglês. Ao mudar TODAY (ou
+# regerar o bloco .ls-cal por qualquer motivo), regerar/sed'ar as
+# DUAS páginas juntas: o resto do bloco é idêntico byte a byte, só
+# os 12 <b>…</b> diferem.
 
 calendar.setfirstweekday(calendar.MONDAY)
 
