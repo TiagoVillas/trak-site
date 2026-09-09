@@ -68,15 +68,16 @@ const sitemap = read('sitemap.xml') || ''
 for (const [, , , rotaEn] of PARES) check(`sitemap tem ${rotaEn}`, has(sitemap, `<loc>${APEX}${rotaEn}</loc>`))
 
 // 8. badge e canal.js na home en
+const appStoreHrefs = (html) => [...html.matchAll(/href="(https:\/\/apps\.apple\.com[^"]*)"/g)].map((m) => m[1])
 const homeEn = read('en/index.html') || ''
 check('en/index.html carrega canal.js', has(homeEn, '<script defer src="/js/canal.js"></script>'))
-const badgesEn = homeEn.match(/apps\.apple\.com[^"]*/g) || []
+const badgesEn = appStoreHrefs(homeEn)
 check('en/index.html tem badges', badgesEn.length >= 1)
 check('badges en com ct=LP-en', badgesEn.every((b) => b.includes('&ct=LP-en&')), badgesEn.join(' | '))
 
 // 9. páginas pt do escopo seguem ct=LP
 for (const [pt] of PARES) {
-  const badges = (read(pt) || '').match(/apps\.apple\.com[^"]*/g) || []
+  const badges = appStoreHrefs(read(pt) || '').filter((b) => b.includes('ct='))
   check(`${pt} badges ct=LP`, badges.every((b) => b.includes('&ct=LP&')), badges.join(' | '))
 }
 
