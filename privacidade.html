@@ -34,7 +34,7 @@
   <main class="prose">
     <p class="breadcrumb"><a href="/">Início</a> › Privacidade</p>
     <h1>Política de Privacidade</h1>
-    <p class="updated">Última atualização: 4 de setembro de 2026</p>
+    <p class="updated">Última atualização: 16 de outubro de 2026</p>
 
     <p>O trak ("aplicativo", "nós") é um app de acompanhamento de hábitos desenvolvido por Tiago Villas. Esta política descreve quais dados coletamos, como os usamos e quais são os seus direitos.</p>
 
@@ -70,28 +70,41 @@
     <h2>4. Onde os dados ficam armazenados</h2>
     <p>Os dados de conta e de conteúdo são armazenados na infraestrutura do <strong>Supabase</strong> (banco de dados PostgreSQL e armazenamento de arquivos), provedor que atua como operador dos dados em nosso nome. Os servidores do Supabase podem estar localizados fora do Brasil (Estados Unidos ou União Europeia); ao usar o trak, você está ciente dessa transferência internacional, realizada com as salvaguardas contratuais do provedor. A transmissão é feita por conexões criptografadas (HTTPS).</p>
 
-    <h2>5. Compartilhamento com terceiros</h2>
+    <h2>5. Cópias de segurança (backup)</h2>
+    <p>Para que seus dados não se percam por falha técnica, erro ou ataque, fazemos <strong>uma cópia por dia</strong> do banco de dados do trak:</p>
+    <ul>
+      <li><strong>Cifradas:</strong> cada cópia é cifrada antes de ser guardada, com chaves que só o desenvolvedor tem. Quem guarda as cópias não consegue abri-las.</li>
+      <li><strong>Onde ficam:</strong> no <strong>Backblaze</strong>, nos Estados Unidos. As cópias são geradas pelo <strong>GitHub</strong>, também nos Estados Unidos: durante a geração, os dados passam por alguns minutos pela memória de uma máquina do GitHub e não são gravados em disco sem cifra. Os dois atuam como operadores em nosso nome.</li>
+      <li><strong>Por quanto tempo:</strong> cada cópia se apaga sozinha em até cerca de 40 dias.</li>
+      <li><strong>Depois que você exclui a conta:</strong> seus dados saem na hora do app e dos nossos servidores, mas podem continuar nas cópias por até cerca de 40 dias, até elas se apagarem. Se uma cópia precisar ser restaurada nesse período, sua exclusão é refeita antes de o serviço voltar.</li>
+      <li><strong>O que não entra:</strong> fotos e imagens (a foto de fundo e as imagens do wallpaper) não fazem parte das cópias.</li>
+      <li><strong>Para que servem:</strong> só para recuperar o serviço e para testar, periodicamente, se a recuperação funciona, num ambiente isolado que é apagado logo depois. Nenhum outro uso.</li>
+    </ul>
+
+    <h2>6. Compartilhamento com terceiros</h2>
     <p>Compartilhamos dados apenas com os provedores necessários para operar o serviço:</p>
     <ul>
       <li><strong>Supabase</strong> — autenticação, banco de dados e armazenamento;</li>
       <li><strong>PostHog</strong> — processamento dos dados de uso do app (analytics), como operador em nosso nome, em servidores nos Estados Unidos, com salvaguardas contratuais para a transferência internacional. Pode ser desativado em Ajustes → Privacidade;</li>
       <li><strong>Apple</strong> e <strong>Google</strong> — apenas quando você opta por entrar com essas contas, para validar sua identidade.</li>
-      <li><strong>Apple (App Store)</strong> — processamento dos pagamentos da assinatura e notificações do status da compra.</li>
+      <li><strong>Apple (App Store)</strong> — processamento dos pagamentos da assinatura e notificações do status da compra;</li>
+      <li><strong>GitHub</strong> — geração das cópias de segurança (seção 5), como operador, nos Estados Unidos;</li>
+      <li><strong>Backblaze</strong> — armazenamento das cópias de segurança cifradas (seção 5), como operador, nos Estados Unidos.</li>
     </ul>
 
-    <h2>6. Retenção e exclusão</h2>
-    <p>Mantemos seus dados enquanto sua conta existir. Você pode excluir sua conta a qualquer momento <strong>dentro do próprio app</strong> (Ajustes → Apagar conta): a exclusão remove dos nossos servidores seus hábitos, registros, preferências, a imagem do wallpaper, a foto de fundo (se houver) e os dados de conta. Se preferir, também pode solicitar a exclusão pelo e-mail abaixo — atendemos em prazo razoável, ressalvadas obrigações legais de retenção.</p>
+    <h2>7. Retenção e exclusão</h2>
+    <p>Mantemos seus dados enquanto sua conta existir. Você pode excluir sua conta a qualquer momento <strong>dentro do próprio app</strong> (Ajustes → Apagar conta): a exclusão remove dos nossos servidores seus hábitos, registros, preferências, a imagem do wallpaper, a foto de fundo (se houver) e os dados de conta. Se preferir, também pode solicitar a exclusão pelo e-mail abaixo — atendemos em prazo razoável, ressalvadas obrigações legais de retenção. As cópias de segurança podem manter esses dados por até cerca de 40 dias depois da exclusão (seção 5).</p>
 
-    <h2>7. Seus direitos</h2>
+    <h2>8. Seus direitos</h2>
     <p>Você pode acessar, corrigir, excluir, solicitar a portabilidade dos seus dados ou revogar consentimentos, conforme a legislação aplicável (incluindo a LGPD, no Brasil). Para exercer esses direitos, entre em contato conosco; você também pode apresentar petição à Autoridade Nacional de Proteção de Dados (ANPD).</p>
 
-    <h2>8. Crianças</h2>
+    <h2>9. Crianças</h2>
     <p>O trak não se destina a menores de 13 anos e não coletamos intencionalmente dados de crianças.</p>
 
-    <h2>9. Alterações nesta política</h2>
+    <h2>10. Alterações nesta política</h2>
     <p>Podemos atualizar esta política periodicamente. A data no topo indica a última revisão. Mudanças relevantes serão comunicadas dentro do aplicativo.</p>
 
-    <h2>10. Contato</h2>
+    <h2>11. Contato</h2>
     <p>Controlador dos dados e contato para assuntos de privacidade:<br>
     <strong>Tiago Villas</strong> — <a href="mailto:contato@trakapp.com.br">contato@trakapp.com.br</a></p>
   </main>
