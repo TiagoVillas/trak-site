@@ -34,7 +34,7 @@
   <main class="prose">
     <p class="breadcrumb"><a href="/">Início</a> › Privacidade</p>
     <h1>Política de Privacidade</h1>
-    <p class="updated">Última atualização: 16 de outubro de 2026</p>
+    <p class="updated">Última atualização: 24 de outubro de 2026</p>
 
     <p>O trak ("aplicativo", "nós") é um app de acompanhamento de hábitos desenvolvido por Tiago Villas. Esta política descreve quais dados coletamos, como os usamos e quais são os seus direitos.</p>
 
@@ -50,7 +50,7 @@
       <li><strong>Registros técnicos:</strong> eventos básicos de operação, como o registro de cada busca do wallpaper pelo atalho (identificador interno da conta, data e hora, e agente do dispositivo) — usados para operar o serviço e medir, de forma agregada, o uso das funcionalidades.</li>
       <li><strong>Dados de uso do app:</strong> eventos de interação com o aplicativo — como conclusão das etapas do primeiro acesso, criação e marcação de hábitos e recursos de wallpaper utilizados — vinculados ao identificador da sua conta. Não incluem o conteúdo do que você escreve (nomes de hábitos ou de datas não são enviados). Você pode desativar esse compartilhamento a qualquer momento em Ajustes → Privacidade, dentro do app.</li>
     </ul>
-    <p>Não coletamos dados de localização, contatos, nem dados de saúde de fontes externas.</p>
+    <p>Não coletamos dados de localização, nem contatos. Dados de atividade física (corridas) só são tratados se você ativar o modo Corrida, como descrito na seção 10.</p>
 
     <h2>2. Como usamos os dados</h2>
     <p>Usamos seus dados exclusivamente para:</p>
@@ -87,6 +87,7 @@
       <li><strong>Supabase</strong> — autenticação, banco de dados e armazenamento;</li>
       <li><strong>PostHog</strong> — processamento dos dados de uso do app (analytics), como operador em nosso nome, em servidores nos Estados Unidos, com salvaguardas contratuais para a transferência internacional. Pode ser desativado em Ajustes → Privacidade;</li>
       <li><strong>Apple</strong> e <strong>Google</strong> — apenas quando você opta por entrar com essas contas, para validar sua identidade.</li>
+      <li><strong>Strava</strong> — apenas se você conectar sua conta no modo Corrida (seção 10), para ler suas atividades com a sua autorização;</li>
       <li><strong>Apple (App Store)</strong> — processamento dos pagamentos da assinatura e notificações do status da compra;</li>
       <li><strong>GitHub</strong> — geração das cópias de segurança (seção 5), como operador, nos Estados Unidos;</li>
       <li><strong>Backblaze</strong> — armazenamento das cópias de segurança cifradas (seção 5), como operador, nos Estados Unidos.</li>
@@ -101,10 +102,22 @@
     <h2>9. Crianças</h2>
     <p>O trak não se destina a menores de 13 anos e não coletamos intencionalmente dados de crianças.</p>
 
-    <h2>10. Alterações nesta política</h2>
+    <h2>10. Dados de atividade física (corridas)</h2>
+    <p>O modo Corrida é <strong>opcional</strong>: só funciona depois que você o ativa no app. As fontes são:</p>
+    <ul>
+      <li><strong>Apple Saúde</strong> — somente leitura, dos treinos de corrida e dos seus trajetos. Não gravamos nada na Saúde e não enviamos esses dados ao iCloud. Seguindo a diretriz 5.1.3 da App Store, esses dados não são usados para publicidade nem para mineração de dados;</li>
+      <li><strong>Strava</strong> — conexão por OAuth, com os escopos <code>read</code> e <code>activity:read_all</code>. Lemos suas atividades pela API do Strava, com a sua autorização.</li>
+    </ul>
+    <p><strong>O que vai para o nosso servidor</strong> (Supabase, seção 4): a silhueta do trajeto normalizada numa grade de 0 a 1, <strong>sem coordenadas geográficas</strong>, mais distância, duração, ritmo, ganho de elevação, horário de início e fuso horário.</p>
+    <p><strong>O que nunca sai do seu celular:</strong> a sua localização, o trajeto de GPS e qualquer mapa.</p>
+    <p>Usamos esses dados apenas para acender o hábito de corrida e desenhar o trajeto no wallpaper.</p>
+    <p><strong>Revogar e apagar:</strong> você pode desconectar o Strava a qualquer momento no app (revogamos o acesso no Strava e apagamos suas corridas importadas) ou em strava.com. A exclusão da conta segue a seção 7.</p>
+    <p>Compatible with Strava.</p>
+
+    <h2>11. Alterações nesta política</h2>
     <p>Podemos atualizar esta política periodicamente. A data no topo indica a última revisão. Mudanças relevantes serão comunicadas dentro do aplicativo.</p>
 
-    <h2>11. Contato</h2>
+    <h2>12. Contato</h2>
     <p>Controlador dos dados e contato para assuntos de privacidade:<br>
     <strong>Tiago Villas</strong> — <a href="mailto:contato@trakapp.com.br">contato@trakapp.com.br</a></p>
   </main>
