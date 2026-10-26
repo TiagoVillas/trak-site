@@ -1,6 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/strava/callback", "destination": "/strava/callback/index.html" }
+  ],
   "redirects": [
     {
       "source": "/pin",

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <title>Voltando para o trak</title>
+  <link rel="canonical" href="https://trakapp.com.br/strava/callback">
+  <meta name="theme-color" content="#f6f4ef">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="preload" href="/fonts/newsreader-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <header class="nav"><div class="container">
+    <a href="/" class="brand"><img class="mark" src="/img/logo-mark.svg" width="28" height="28" alt=""> trak</a>
+  </div></header>
+
+  <main class="prose">
+    <h1>voltando para o trak…</h1>
+    <p>se o app não abrir sozinho, toque no botão abaixo.</p>
+    <p id="fallback" hidden><a id="open" class="nav-cta" href="trak://strava/callback">abrir o trak</a></p>
+  </main>
+
+  <footer class="site"><div class="container inner">
+    <div>
+      <div class="links"><a href="/#como">Como funciona</a><a href="/configurar">Configurar</a><a href="/privacidade">Privacidade</a><a href="/termos">Termos</a><a href="/acessibilidade">Acessibilidade</a></div>
+      <div style="margin-top:14px;">Contato: <a href="mailto:contato@trakapp.com.br">contato@trakapp.com.br</a></div>
+    </div>
+    <div class="copy">© 2026 trak · feito por Tiago Villas</div>
+  </div></footer>
+
+  <script>
+    (function () {
+      var q = location.search;
+      var url = 'trak://strava/callback' + q;
+      document.getElementById('open').href = url;
+      location.replace(url);
+      setTimeout(function () { document.getElementById('fallback').hidden = false; }, 1500);
+    })();
+  </script>
+</body>
+</html>
