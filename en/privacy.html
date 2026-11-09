@@ -33,7 +33,7 @@
   <main class="prose">
     <p class="breadcrumb"><a href="/en">Home</a> › Privacy Policy</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 24, 2026</p>
+    <p class="updated">Last updated: November 9, 2026</p>
     <p class="courtesy">This is a courtesy translation. If there is any conflict, the Portuguese version at <a href="/privacidade" hreflang="pt-BR" lang="pt-BR">trakapp.com.br/privacidade</a> governs.</p>
 
     <p>trak (“the app”, “we”) is a habit-tracking app developed by Tiago Villas. This policy describes what data we collect, how we use it and what your rights are.</p>
@@ -91,6 +91,7 @@
       <li><strong>Apple (App Store)</strong> — processing of subscription payments and purchase status notifications;</li>
       <li><strong>GitHub</strong> — generation of the backups (section 5), as a processor, in the United States;</li>
       <li><strong>Backblaze</strong> — storage of the encrypted backups (section 5), as a processor, in the United States.</li>
+      <li><strong>Google Calendar</strong> — only if you connect an account in Calendar mode (section 11), to read the times of the calendars you choose, with your authorization;</li>
     </ul>
 
     <h2>7. Retention and deletion</h2>
@@ -114,10 +115,25 @@
     <p><strong>Revoking and deleting:</strong> you can disconnect Strava at any time in the app (we revoke access at Strava and delete your imported runs) or at strava.com. Account deletion follows section 7.</p>
     <p>Compatible with Strava.</p>
 
-    <h2>11. Changes to this policy</h2>
+    <h2>11. Google Calendar data (Calendar mode)</h2>
+    <p>Calendar mode is <strong>optional</strong> and only works after you connect a Google account in the app. The connection uses OAuth with two <strong>read-only</strong> scopes: <code>calendar.calendarlist.readonly</code> (to list your calendars so you can choose which ones to include) and <code>calendar.events.readonly</code> (to read the events in those calendars). trak never creates, changes or deletes anything in your calendar.</p>
+    <p><strong>What goes to our server</strong> (Supabase, section 4), only for the calendars you chose:</p>
+    <ul>
+      <li>the email address and identifier of the connected Google account;</li>
+      <li>an access credential (refresh token), stored <strong>encrypted</strong> and used only by the server to keep your calendar up to date;</li>
+      <li>the identifiers of the calendars you chose;</li>
+      <li>for each event: its start and end time (or dates, for all-day events), its status and its Google event identifier, plus a derived key (a one-way hash) used to avoid counting twice the same event that appears in two calendars.</li>
+    </ul>
+    <p><strong>What we never store:</strong> the title, description, location and attendees of your events.</p>
+    <p>We keep only the window the wallpaper uses: from 7 days ago to 35 days ahead. Everything else is deleted automatically.</p>
+    <p>We use this data only to draw your calendar on the wallpaper and to notify your iPhone when it changes. We do not sell it, share it with third parties, use it for advertising or use it to train artificial intelligence models.</p>
+    <p>trak's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <p><strong>Revoke and delete:</strong> you can disconnect the account at any time in the app (Settings → Calendar), which deletes the connection and the stored events and revokes access at Google; or revoke access at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. If you stop using Calendar mode or your subscription ends, we stop receiving Google's notifications and delete the stored events, keeping only the connection until you disconnect. Account deletion follows section 7.</p>
+
+    <h2>12. Changes to this policy</h2>
     <p>We may update this policy from time to time. The date at the top indicates the last revision. Material changes will be communicated inside the app.</p>
 
-    <h2>12. Contact</h2>
+    <h2>13. Contact</h2>
     <p>Data controller and contact for privacy matters:<br>
     <strong>Tiago Villas</strong> — <a href="mailto:contato@trakapp.com.br">contato@trakapp.com.br</a></p>
   </main>

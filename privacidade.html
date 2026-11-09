@@ -34,7 +34,7 @@
   <main class="prose">
     <p class="breadcrumb"><a href="/">Início</a> › Privacidade</p>
     <h1>Política de Privacidade</h1>
-    <p class="updated">Última atualização: 24 de outubro de 2026</p>
+    <p class="updated">Última atualização: 9 de novembro de 2026</p>
 
     <p>O trak ("aplicativo", "nós") é um app de acompanhamento de hábitos desenvolvido por Tiago Villas. Esta política descreve quais dados coletamos, como os usamos e quais são os seus direitos.</p>
 
@@ -91,6 +91,7 @@
       <li><strong>Apple (App Store)</strong> — processamento dos pagamentos da assinatura e notificações do status da compra;</li>
       <li><strong>GitHub</strong> — geração das cópias de segurança (seção 5), como operador, nos Estados Unidos;</li>
       <li><strong>Backblaze</strong> — armazenamento das cópias de segurança cifradas (seção 5), como operador, nos Estados Unidos.</li>
+      <li><strong>Google Agenda</strong> — apenas se você conectar uma conta no modo Calendário (seção 11), para ler os horários das agendas que você escolher, com a sua autorização;</li>
     </ul>
 
     <h2>7. Retenção e exclusão</h2>
@@ -114,10 +115,25 @@
     <p><strong>Revogar e apagar:</strong> você pode desconectar o Strava a qualquer momento no app (revogamos o acesso no Strava e apagamos suas corridas importadas) ou em strava.com. A exclusão da conta segue a seção 7.</p>
     <p>Compatible with Strava.</p>
 
-    <h2>11. Alterações nesta política</h2>
+    <h2>11. Dados do Google Agenda (modo Calendário)</h2>
+    <p>O modo Calendário é <strong>opcional</strong> e só funciona depois que você conecta uma conta Google no app. A conexão usa OAuth com dois escopos de <strong>somente leitura</strong>: <code>calendar.calendarlist.readonly</code> (para listar as suas agendas e você escolher quais entram) e <code>calendar.events.readonly</code> (para ler os compromissos dessas agendas). O trak nunca cria, altera nem apaga nada na sua agenda.</p>
+    <p><strong>O que vai para o nosso servidor</strong> (Supabase, seção 4), só das agendas que você escolheu:</p>
+    <ul>
+      <li>o e-mail e o identificador da conta Google conectada;</li>
+      <li>uma credencial de acesso (refresh token), guardada <strong>cifrada</strong> e usada só pelo servidor para manter a agenda atualizada;</li>
+      <li>os identificadores das agendas escolhidas;</li>
+      <li>de cada compromisso: horário de início e de fim (ou as datas, se for de dia todo), o status e o identificador do compromisso no Google, mais uma chave derivada (um hash, que não pode ser revertido) usada para não contar duas vezes o mesmo compromisso que aparece em duas agendas.</li>
+    </ul>
+    <p><strong>O que nunca guardamos:</strong> o título, a descrição, o local e os participantes dos compromissos.</p>
+    <p>Guardamos só a janela que o wallpaper usa: de 7 dias atrás até 35 dias à frente. O resto é apagado automaticamente.</p>
+    <p>Usamos esses dados apenas para desenhar a sua agenda no wallpaper e avisar o seu iPhone quando ela muda. Não os vendemos, não os compartilhamos com terceiros, não os usamos para publicidade e não os usamos para treinar modelos de inteligência artificial.</p>
+    <p>O uso e a transferência, para qualquer outro app, de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+    <p><strong>Revogar e apagar:</strong> você pode desconectar a conta a qualquer momento no app (Ajustes → Agenda), o que apaga a conexão e os compromissos guardados e revoga o acesso no Google; ou revogar o acesso em <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. Se você deixar de usar o modo Calendário ou a assinatura terminar, paramos de receber os avisos do Google e apagamos os compromissos guardados, mantendo só a conexão até você desconectar. A exclusão da conta segue a seção 7.</p>
+
+    <h2>12. Alterações nesta política</h2>
     <p>Podemos atualizar esta política periodicamente. A data no topo indica a última revisão. Mudanças relevantes serão comunicadas dentro do aplicativo.</p>
 
-    <h2>12. Contato</h2>
+    <h2>13. Contato</h2>
     <p>Controlador dos dados e contato para assuntos de privacidade:<br>
     <strong>Tiago Villas</strong> — <a href="mailto:contato@trakapp.com.br">contato@trakapp.com.br</a></p>
   </main>
