@@ -2,6 +2,11 @@
 # É o opt-in do repo: com a captura em allowlist, repo sem este arquivo não emite nada.
 # Uma chave por linha; um padrão por linha. Padrão relativo vale a partir da pasta deste
 # arquivo; o absoluto (~/Documents/MyPROJECTS/...) cobre leituras feitas de outro checkout.
+# As formas ~/** cobrem .env, .p8 e Secrets*.xcconfig lidos de qualquer pasta da home.
+# Workspace: "trak" (trak-site, founder-os) ou "pessoal" (projeto-semente, waze-domestico); project =
+# nome da pasta. A captura do Claude Code pede também, no checkout de trabalho, `ai-memory install-hooks
+# --agent claude-code --scope project --capture-assistant --apply` (os hooks do Codex são globais) e só
+# começa quando este arquivo estiver no ramo em uso.
 workspace = "trak"
 project = "trak-site"
 drop_subagent_captures = "true"
@@ -14,6 +19,10 @@ ignore_paths = [
   "*.p8",
   "**/*.p8",
   "**/Secrets*.xcconfig",
+  "~/**/.env",
+  "~/**/.env.*",
+  "~/**/*.p8",
+  "~/**/Secrets*.xcconfig",
   ".env.*",
   "~/Documents/MyPROJECTS/trak-site/.env*",
   "~/.secrets/**",
