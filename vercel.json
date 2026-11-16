@@ -52,6 +52,16 @@
       "permanent": false
     },
     {
+      "source": "/corrida",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=corrida&ppid=a5906617-0026-456a-9dcd-f94c08d5816b&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/corrida/:ct([a-z0-9-]{2,40})",
+      "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=:ct&ppid=a5906617-0026-456a-9dcd-f94c08d5816b&mt=8",
+      "permanent": false
+    },
+    {
       "source": "/c/:creator",
       "destination": "https://apps.apple.com/app/apple-store/id6771655767?pt=128788891&ct=:creator&mt=8",
       "permanent": false
